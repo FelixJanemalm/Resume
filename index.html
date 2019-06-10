@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Felix Janemalm - Agile Marketer </title>
+      <meta charset="utf-8">
+      <meta name="description" content="Felix Janemalm Resume">
+      <meta name="keywords" content="CV, Resume, Felix, Janemalm">
+      <meta name="author" content="Felix Janemalm">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff"><style media="screen">
+  #topnav{
+     position:fixed;
+     left:0;
+     top:0;
+     right:0;
+     height:94px;
+     background:#fff;
+     z-index:4;
+     display:block;
+     isolation:isolate
+ }
+ #topnav NAV UL A:hover{
+     font-weight:700;
+     color:#323232;
+     cursor:pointer
+ }
+ .activeSection{
+     font-weight:700;
+     color:#323232
+ }
+ nav{
+     position:absolute;
+     left:11px;
+     bottom:22px;
+     height:38px;
+     top:26px;
+     line-height:11px;
+     letter-spacing:1px
+ }
+ #logo{
+     left:46px;
+     cursor:pointer;
+     height:26px;
+     width:26px;
+     position:relative
+ }
+ .activeSectionLogo{
+     opacity:.4
+ }
+ #logo:hover{
+     opacity:1
+ }
+ #homeNav{
+     display:none
+ }
+ #dynamicSectionHeading{
+     display:none
+ }
+ @media only screen and (max-width:450px){
+     #menuToggle{
+         display:block;
+         position:relative;
+         z-index:1;
+         -webkit-user-select:none;
+         user-select:none
+     }
+     #menuToggle input{
+         display:block;
+         width:calc(20vw + 240px);
+         height:50px;
+         position:absolute;
+         top:-17px;
+         left:30px;
+         cursor:pointer;
+         opacity:0;
+         z-index:2;
+         -webkit-touch-callout:none
+     }
+     #menuToggle span{
+         display:block;
+         left:50px;
+         height:5px;
+         position:absolute;
+         background:#323232;
+         z-index:1;
+         transform-origin:4px 0;
+         transition:transform .5s cubic-bezier(.77,.2,.05,1),background .5s cubic-bezier(.77,.2,.05,1),opacity .55s ease
+     }
+     #menuToggle span:first-child{
+         transform-origin:0 0
+     }
+     #menuToggle span:nth-last-child(3){
+         top:11.1px;
+         transform-origin:0 100%;
+         width:10px
+     }
+     #menuToggle span:nth-last-child(4){
+         top:20.7px;
+         transform-origin:0 100%;
+         width:5px
+     }
+     #menuToggle span:nth-last-child(5){
+         top:1.5px;
+         width:17.5px
+     }
+     #menuToggle input:checked~span{
+         opacity:1;
+         transform:rotate(45deg) translate(-2px,-1px);
+         background:#232323;
+         width:24px
+     }
+     #menuToggle input:checked~span:nth-last-child(4){
+         opacity:0;
+         transform:rotate(0) scale(.2,.2)
+     }
+     #menuToggle input:checked~span:nth-last-child(3){
+         transform:rotate(-45deg) translate(0,-1px);
+         top:12.3px;
+         width:24px
+     }
+     #menu{
+         position:absolute;
+         width:100px;
+         margin:-70px 0 0 -50px;
+         padding:90px;
+         padding-top:125px;
+         background:#ededed;
+         list-style-type:none;
+         -webkit-font-smoothing:antialiased;
+         transform-origin:0 0;
+         transform:translate(-100%,0);
+         transition:transform .5s cubic-bezier(.77,.2,.05,1)
+     }
+     #menu li{
+         padding:18px 0
+     }
+     #menuToggle input:checked~ul{
+         transform:none
+     }
+     #homeNav{
+         display:inline
+     }
+     #logo{
+         display:none
+     }
+     #dynamicSectionHeading{
+         padding:0 10px;
+         display:block;
+         font-size:24px;
+         color:#424242;
+         text-transform:uppercase;
+         text-decoration:none;
+         font-family:proxima_novabold;
+         margin-left:calc(22vw + 80px);
+         margin-top:.66em;
+         z-index:10
+     }
+ }
+ nav ul a{
+     padding:0 10px;
+     display:block;
+     font-size:11.2px;
+     color:#656565;
+     text-transform:uppercase;
+     text-decoration:none;
+     font-family:proxima_novaregular
+ }
+ nav li{
+     float:left;
+     list-style:none;
+     list-style-image:none
+ }
+ #arrowLink{
+     cursor:pointer;
+     position: relative;
+ }
+ .pagenavigation a{
+     padding:0 10px;
+     display:block;
+     font-size:11px;
+     color:#fff;
+     text-transform:uppercase;
+     text-decoration:none;
+     font-family:proxima_novaregular
+ }
+ .pagenavigation{
+     position:fixed;
+     left:11px;
+     bottom:22px;
+     height:38px;
+     top:100px;
+     line-height:10px;
+     letter-spacing:1px;
+     display:block
+ }
+ h1,h2,h3,h4,p{
+     font-family:proxima_novaregular
+ }
+ h1,h2,h3,h4{
+     color:#342d33
+ }
+ p{
+     color:#555
+ }
+ .home{
+     float:left;
+     margin-top:10vh;
+     height:90vh;
+     width:100vw;
+     left:0;
+     top:0;
+     transition:.5s;
+     overflow:hidden
+ }
+ .homeHeading{
+     -webkit-animation:text-focus-in .6s cubic-bezier(.55,.085,.68,.53) both;
+     animation:text-focus-in .6s cubic-bezier(.55,.085,.68,.53) both;
+     position:relative;
+     width:80%;
+     margin-left:8.33333%
+ }
+ .homeHeading h1{
+     font-size:calc(2em + 4vw);
+     text-rendering:optimizeLegibility;
+     -webkit-font-smoothing:antialiased
+ }
+ .homeHeading a{
+     margin-left:50vw;
+     font-size:calc(4.5em + 4vw);
+     text-rendering:optimizeLegibility;
+     -webkit-font-smoothing:antialiased;
+     text-decoration:none;
+     color:#342d33
+ }
+ .welcome{
+     float:left;
+     margin-top:10vh;
+     height:90vh;
+     width:100vw;
+     left:0;
+     top:0;
+     z-index:2;
+     transition:.5s;
+     overflow:hidden
+ }
+ .welcomecontent{
+     width:100vw;
+     height:90vh;
+     -webkit-animation:text-focus-in .6s cubic-bezier(.55,.085,.68,.53) both;
+     animation:text-focus-in .6s cubic-bezier(.55,.085,.68,.53) both;
+     position:relative
+ }
+ .about h1{
+     font-size:2.074em;
+     color:#342d33;
+     font-family:"Inter var",sans-serif
+ }
+ .about p{
+     font-size:1em;
+     font-weight:400;
+     letter-spacing:.03em;
+     line-height:1.728em
+ }
+ .about a:nth-of-type(1){
+     color:#f9812a
+ }
+ .about a{
+     text-decoration:none;
+     border-bottom:1px solid
+ }
+ .about{
+     max-width:460px;
+     left:30%;
+     top:50%;
+     transform:translate(-30%,-50%);
+     position:absolute;
+     z-index:1
+ }
+ .welcomemedia1{
+     top:73vh;
+     left:calc(50vw - 144px);
+     height:17vh;
+     width:288px;
+     position:relative
+ }
+ .welcomemedia1 p{
+     left:0;
+     bottom:0;
+     max-width:200px;
+     z-index:1;
+     position:absolute
+ }
+ .welcome img:nth-of-type(1){
+     right:0;
+     bottom:0;
+     z-index:0;
+     width:200px;
+     position:absolute
+ }
+ #felix1{
+     left:calc(50vw + 90px);
+     top:calc(13.5vw);
+     z-index:0;
+     width:calc(12vw + 160px + 10vh);
+     min-width:200px;
+     position:absolute
+ }
+ @media only screen and (max-width:980px){
+     # {
+         top:12vh
+     }
+ }
+ @media only screen and (max-width:850px){
+     #felix1{
+         left:50vw
+     }
+ }
+ @media only screen and (max-width:850px) and (max-height:850px){
+     .about{
+         top:60vh
+     }
+     .welcomemedia1{
+         display:none
+     }
+     .welcome{
+         height:85vh
+     }
+     .welcomecontent{
+         height:85vh
+     }
+ }
+ @media only screen and (max-width:550px) and (max-height:550px){
+     .about{
+         top:70vh
+     }
+     .welcome{
+         overflow-y:visible
+     }
+ }
+ @media only screen and (max-width:600px){
+     #felix1{
+         left:40vw
+     }
+ }
+ @media only screen and (max-width:470px){
+     #felix1{
+         left:30vw
+     }
+ }
+ @media only screen and (max-width:380px){
+     #felix1{
+         left:calc(50% - 40vw);
+         min-width:80vw
+     }
+ }
+ .resume{
+     padding-top:10vh;
+     width:100vw;
+     float:left;
+     overflow:hidden;
+     position:relative
+ }
+ #worktitle h1 img{
+     margin-left:18px;
+     margin-top:6px;
+     width:32px
+ }
+ #Degreetitle h1 img{
+     margin-left:22px;
+     margin-top:6px;
+     width:48px
+ }
+ .resumetitle{
+     padding-left:60px;
+     float:left;
+     width:100px;
+     margin-top:34px;
+     height:50px
+ }
+ .resumecontent{
+     float:left;
+     margin:40px;
+     height:150px;
+     width:220px
+ }
+ .resumecontent a{
+     text-decoration:none;
+     border-bottom:1px solid;
+     color:#f9812a
+ }
+ .resumecontent p{
+     margin-top:8px;
+     margin-bottom:8px
+ }
+ .resumecontent h3{
+     margin-bottom:3px
+ }
+ @media only screen and (min-width:460px){
+     .resumetitle{
+         height:1300px
+     }
+     .portfolioText{
+         margin-top:60px
+     }
+ }
+ @media only screen and (min-width:760px){
+     .resumetitle{
+         height:650px
+     }
+ }
+ @media only screen and (min-width:1060px){
+     .resumetitle{
+         height:200px
+     }
+ }
+@media only screen and (max-width : 460px){
+  #prassText {
+      padding-top: 2.5em;
+  }
+}
+ .portfolio{
+     padding-top:10vh;
+     width:100vw;
+     float:left;
+     column-count:1;
+     -webkit-column-count:1;
+     column-gap:0;
+     -webkit-column-gap:0;
+     -moz-column-fill:balance;
+     column-fill:balance;
+     overflow:hidden
+ }
+ .portfoliocontent{
+     position:relative;
+     break-inside:avoid;
+     -webkit-column-break-inside:avoid
+ }
+ .portfoliocontent img,.portfoliocontent video{
+     position:relative;
+     top:0;
+     left:0;
+     display:flex;
+     height:auto;
+     width:100%;
+     z-index:-2
+ }
+ .portfolioText{
+     font:900 6vmin/5.3vmin proxima_novabold;
+     width:80%;
+     height:80%;
+     min-width:150px;
+     padding-left:10%;
+     padding-right:10%;
+     position:absolute;
+     z-index:-1;
+     transition-duration:.5s;
+     text-align:center;
+     background-color:rgba(0,0,0,.5);
+     padding-top:15%;
+     margin:0
+ }
+ .portfoliocontent a,.portfoliocontent h3,.portfoliocontent p{
+     color:#fff
+ }
+ .portfolio a{
+     text-decoration:none;
+     border-bottom:1px solid
+ }
+ .columnP{
+     float:left;
+     width:25%;
+     padding:10px;
+     box-sizing:border-box;
+     transition:.5s
+ }
+ .collapsible-content4 .columnP{
+     width:20%
+ }
+ .columnP img{
+     opacity:.8;
+     cursor:pointer;
+     z-index:2
+ }
+ .columnP img:hover{
+     opacity:1
+ }
+ .rowP:after{
+     content:"";
+     display:table;
+     clear:both
+ }
+ #cont1,#cont2,#cont3,#cont4,#cont5{
+     opacity:0
+ }
+ input[type=checkbox]{
+     display:none
+ }
+ .itemToggle{
+     cursor:pointer;
+     content:' ';
+     display:inline-block;
+     position:relative;
+     top:-14px;
+     left:0;
+     width:100%;
+     height:calc(100vw*.75);
+     margin-top:calc(-100vw*.75);
+     z-index:2
+ }
+ .content-inner{
+     margin-top:-19px;
+     padding:1.5rem 4vw
+ }
+ .content-inner h3,.content-inner p{
+     color:#000
+ }
+ .content-inner a{
+     color:#f9812a
+ }
+ .collapsible-content{
+     margin-top:-19px;
+     max-height:0;
+     overflow:hidden;
+     transition:max-height .8s ease-in-out
+ }
+ .toggle:checked+.itemToggle+.collapsible-content{
+     max-height:calc(400px)
+ }
+ .collapsible-content2{
+     margin-top:-19px;
+     max-height:0;
+     overflow:hidden;
+     transition:max-height .8s ease-in-out
+ }
+ .toggle2:checked+.itemToggle+.collapsible-content2{
+     max-height:500px
+ }
+ .collapsible-content3{
+     margin-top:-19px;
+     max-height:0;
+     overflow:hidden;
+     transition:max-height .8s ease-in-out
+ }
+ .toggle3:checked+.itemToggle+.collapsible-content3{
+     max-height:870px
+ }
+ .collapsible-content4{
+     margin-top:-19px;
+     max-height:0;
+     overflow:hidden;
+     transition:max-height .8s ease-in-out
+ }
+ .toggle4:checked+.itemToggle+.collapsible-content4{
+     max-height:350px
+ }
+ .collapsible-content5{
+     margin-top:-19px;
+     max-height:0;
+     overflow:hidden;
+     transition:max-height .8s ease-in-out
+ }
+ .toggle5:checked+.itemToggle+.collapsible-content5{
+     max-height:600px
+ }
+ #eboardTitle6{
+     background-color:rgba(0,0,0,1);
+     opacity:1;
+     z-index:3;
+     height:300px
+ }
+ @media only screen and (min-width:920px){
+     .portfolio{
+         column-count:2;
+         -webkit-column-count:2
+     }
+     .itemToggle{
+         height:calc(50vw*.75);
+         margin-top:calc(-50vw*.75)
+     }
+ }
+ @media only screen and (min-width:1420px){
+     .portfolio{
+         column-count:3;
+         -webkit-column-count:3
+     }
+     .itemToggle{
+         height:calc(33vw*.75);
+         margin-top:calc(-33vw*.75)
+     }
+ }
+ @media only screen and (max-width:919px){
+     .portfolioText p{
+         width:100px;
+         margin-top:65px;
+         font:900 8vmin/6.6vmin proxima_novabold
+     }
+ }
+ .doodleSection{
+     width:100vw;
+     margin-top:10vh;
+     float:left;
+     overflow:hidden;
+     position:relative
+ }
+ .doodleTitle{
+     padding-left:25vw;
+     padding-top:calc(10vw + 36px);
+     width:auto;
+     margin:0 auto;
+     backface-visibility:hidden;
+     position:relative
+ }
+ .doodleTitle h1{
+     text-transform:uppercase;
+     transform:skew(10deg) rotate(-10deg);
+     font-size:10vw;
+     float:left;
+     margin:0;
+     font-family:proxima_novabold;
+     color:rgba(249,129,42,.6);
+     white-space:nowrap;
+     z-index:5;
+     text-shadow:1px 4px 6px #e6e2df,0 0 0 #66303a,1px 4px 6px #e6e2df
+ }
+ .doodleTitle h1::before{
+     content:attr(data-heading);
+     position:absolute;
+     left:0;
+     top:0;
+     overflow:hidden;
+     width:100%;
+     height:51%;
+     color:#342d33;
+     text-shadow:2px -1px 6px transparent;
+     transition:all 250ms ease-in-out
+ }
+ .doodleTitle h1:hover~h1::before{
+     transform:translate(0,0) skew(0) scale(1,1);
+     text-shadow:0 0 0 transparent,0 0 0 transparent;
+     height:50%;
+     color:#342d33
+ }
+ .doodleTitle h1:hover+h1::before{
+     transform:translate(.385vw,-4.9%) skew(-6.5deg) scale(1,1.1);
+     text-shadow:1px -.5px 3px rgba(0,0,0,.3),0 -.25vw 2px rgba(0,0,0,.15);
+     height:50%;
+     color:#484247
+ }
+ .doodleTitle:hover h1::before{
+     transform:translate(.85vw,-9.9%) skew(-13deg) scale(1,1.2);
+     text-shadow:2px -1px 6px rgba(0,0,0,.2),0 -.5vw 4px rgba(0,0,0,.15);
+     height:50%;
+     color:#716c70
+ }
+ .doodleTitle h1::after{
+     content:attr(data-heading);
+     position:absolute;
+     left:0;
+     top:0;
+     color:#342d33;
+     transform:skew(0) scale(1,1);
+     clip-path:polygon(0 50%,100% 50%,100% 100%,0 100%);
+     text-shadow:2px -1px 6px transparent;
+     transition:all 250ms ease;
+     backface-visibility:hidden
+ }
+ .doodleTitle h1:hover~h1::after{
+     transform:skew(0) scale(1,1);
+     text-shadow:0 0 0 transparent,0 0 0 transparent;
+     color:#342d33
+ }
+ .doodleTitle h1:hover+h1::after{
+     transform:skew(3deg) scale(1,.95);
+     text-shadow:.5px -.25px 1.5px rgba(0,0,0,.4),0 -.25VW 1.5px rgba(0,0,0,.15);
+     color:#241f24
+ }
+ .doodleTitle:hover h1::after{
+     transform:skew(13deg) scale(1,.8);
+     text-shadow:2px -1px 6px rgba(0,0,0,.3),0 -.5VW 3px rgba(0,0,0,.15);
+     color:#151214
+ }
+ h1:nth-of-type(2){
+     margin-top:-1.1vw
+ }
+ h1:nth-of-type(3){
+     margin-top:-2.2vw
+ }
+ h1:nth-of-type(4){
+     margin-top:-3.3vw
+ }
+ h1:nth-of-type(5){
+     margin-top:-4.4vw
+ }
+ h1:nth-of-type(6){
+     margin-top:-5.5vw
+ }
+ h1:nth-of-type(7){
+     margin-top:-6.6vw
+ }
+ .doodlesWrapper{
+     padding-left:5%;
+     padding-right:5%;
+     width:90%;
+     height:auto;
+     display:flex;
+     flex-flow:row wrap;
+     justify-content:space-around;
+     align-items:center;
+     text-align:center;
+     padding-top:calc(10px + 2.5vw)
+ }
+ .doodle{
+     flex:auto;
+     margin:calc(1vw + 15px)
+ }
+ .doodle img,.doodle video{
+     max-height:300px;
+     max-width:420px;
+     -moz-box-shadow:2px 2px 5px #999;
+     -webkit-box-shadow:2px 2px 5px #999;
+     box-shadow:2px 2px 5px #999
+ }
+ @media only screen and (max-width:420px){
+     .doodle img,.doodle video{
+         max-width:100vw
+     }
+ }
+ .doodle video:hover{
+     cursor:pointer
+ }
+ .button.play{
+     width:37px;
+     height:37px;
+     border-style:solid;
+     border-width:18.5px 0 18.5px 37px;
+     box-sizing:border-box;
+     border-color:transparent transparent transparent rgb(255,255,255,1);
+     background:0 0;
+     margin:8px;
+     position:absolute
+ }
+ .button.playblack{
+     width:37px;
+     height:37px;
+     border-style:solid;
+     border-width:18.5px 0 18.5px 37px;
+     box-sizing:border-box;
+     border-color:transparent transparent transparent rgb(0,0,0,1);
+     background:0 0;
+     margin:8px;
+     position:absolute
+ }
+ .bookSection{
+     width:100vw;
+     height:auto;
+     margin-top:10vh;
+     float:left;
+     overflow:hidden;
+     position:relative
+ }
+ #BooksectionHeading{
+     margin-top:10vh;
+     position:relative;
+     width:600px;
+     left:calc(50% - 300px)
+ }
+ #BooksectionHeading a{
+     color:#f9812a;
+     text-decoration:none;
+     border-bottom:1px solid
+ }
+ .bookSection img{
+     top:0;
+     width:100%;
+     position:absolute
+ }
+ .bookText{
+     left:calc(50% - 20em);
+     width:40em;
+     top:1.2em;
+     height:42em;
+     position:relative
+ }
+ .bookText h2{
+     padding-top:3.3em;
+     padding-left:6.56em;
+     padding-right:6.56em;
+     position:relative
+ }
+ .bookText p{
+     padding-left:9.84em;
+     padding-right:9.84em;
+     position:relative;
+     text-align:justify
+ }
+ .emailForm{
+     margin-left:calc(50% - 240px);
+     padding-bottom:3.75em
+ }
+ .emailForm input{
+     margin-bottom:26px
+ }
+ .emailForm input:nth-last-of-type(1){
+     margin-bottom:14px
+ }
+ .field-group{
+     margin-top:10px
+ }
+ #subButton{
+     margin-top:14px
+ }
+ @media only screen and (max-width:650px){
+     #BooksectionHeading{
+         width:90vw;
+         left:calc(50% - 45vw)
+     }
+ }
+ @media only screen and (max-width:600px){
+     .emailForm{
+         width:80%;
+         margin-left:10%
+     }
+     .bookText{
+         left:calc(50% - 12.5em);
+         width:25em;
+         height:45em
+     }
+     .bookText h2{
+         padding-top:3.2em;
+         padding-left:2.08em;
+         padding-right:2.08em
+     }
+     .bookText p{
+         padding-left:3.125em;
+         padding-right:3.125em
+     }
+     .bookSection img{
+         left:calc(50% - 18.5em);
+         width:37em;
+         height:43.5em
+     }
+ }
+ @media only screen and (max-width:380px){
+     .bookText h2{
+         padding-top:5em;
+         padding-left:4.5em;
+         padding-right:4.5em;
+         font-size:1em;
+         margin-bottom:-.3em
+     }
+     .bookSection img{
+         left:calc(50% - 17em);
+         width:34em;
+         height:43.5em
+     }
+     .bookText p{
+         padding-left:4.5em;
+         padding-right:4.2em
+     }
+     .bookText{
+         height:48em
+     }
+ }
+ @media only screen and (max-width:280px){
+     .bookText{
+         left:0;
+         width:100vw;
+         height:50em
+     }
+     .bookText h2,.bookText p{
+         min-width:90vw;
+         padding-left:5vw;
+         padding-right:5vw
+     }
+     .bookSection img{
+         height:46em
+     }
+ }
+ @media only screen and (max-width:250px){
+     .bookText{
+         height:54em
+     }
+     .bookText h2{
+         padding-top:5.7em
+     }
+     .bookSection img{
+         height:49em
+     }
+ }
+ @media only screen and (max-width:240px){
+     .bookText{
+         height:55em
+     }
+     .bookSection img{
+         height:50.5em
+     }
+ }
+ @media only screen and (max-width:230px){
+     .bookText{
+         height:60em
+     }
+     .bookText h2{
+         padding-top:6em
+     }
+     .bookSection img{
+         height:55em
+     }
+ }
+ @media only screen and (max-width:215px){
+     .bookText{
+         height:66em
+     }
+     .bookText h2{
+         padding-top:6.8em
+     }
+     .bookSection img{
+         height:61em
+     }
+ }
+ .contactSection{
+     width:100vw;
+     margin-top:10vh;
+     float:left;
+     overflow:hidden;
+     height:auto
+ }
+ .contactText{
+     margin-top:33vh;
+     margin-left:5vw
+ }
+ @media only screen and (min-width:450px){
+     .contactText{
+         margin-left:10vw
+     }
+ }
+ @media only screen and (min-width:700px){
+     .contactText{
+         margin-left:33vw
+     }
+ }
+ #liIcon{
+     width:24px;
+     margin-bottom:-6px;
+     margin-left:6px;
+     margin-right:22px
+ }
+ #mailIcon{
+     height:21.4px;
+     margin-bottom:-5px;
+     margin-left:10px
+ }
+ .contactSection a{
+     font-size:1em;
+     font-weight:400;
+     letter-spacing:.03em;
+     line-height:1.728em;
+     text-decoration:none;
+     color:#555
+ }
+ @media only screen and (max-width:390px){
+     .contactSection a:nth-of-type(2)::before{
+         content:"\A";
+         white-space:pre
+     }
+ }
+ .contactSection a:hover{
+     color:#f9812a
+ }
+ .contactText h1{
+     font-size:2.074em;
+     color:#342d33;
+     font-family:"Inter var",sans-serif
+ }
+ #v0{
+     position:fixed;
+     bottom:0;
+     left:0;
+     width:110%;
+     z-index:-1
+ }
+ @-webkit-keyframes text-focus-in{
+     0%{
+         -webkit-filter:blur(12px);
+         filter:blur(12px);
+         opacity:0
+     }
+     100%{
+         -webkit-filter:blur(0);
+         filter:blur(0);
+         opacity:1
+     }
+ }
+ @keyframes text-focus-in{
+     0%{
+         -webkit-filter:blur(12px);
+         filter:blur(12px);
+         opacity:0
+     }
+     100%{
+         -webkit-filter:blur(0);
+         filter:blur(0);
+         opacity:1
+     }
+ }
+ @-webkit-keyframes text-pop-up-top{
+     0%{
+         -webkit-transform:translateY(0);
+         transform:translateY(0);
+         -webkit-transform-origin:50% 50%;
+         transform-origin:50% 50%;
+         text-shadow:none
+     }
+     100%{
+         -webkit-transform:translateY(-2px);
+         transform:translateY(-2px);
+         -webkit-transform-origin:50% 50%;
+         transform-origin:50% 50%;
+         text-shadow:0 0 0 #ccc,0 .2px 0 #ccc,0 .4px 0 #ccc,0 .6px 0 #ccc,0 .8px 0 #ccc,0 1px 0 #ccc,0 1.2px 0 #ccc,0 1.4px 0 #ccc,0 1.6px 0 #ccc,0 10px 4px transparent
+     }
+ }
+ @keyframes text-pop-up-top{
+     0%{
+         -webkit-transform:translateY(0);
+         transform:translateY(0);
+         -webkit-transform-origin:50% 50%;
+         transform-origin:50% 50%;
+         text-shadow:none
+     }
+     100%{
+         -webkit-transform:translateY(-2px);
+         transform:translateY(-2px);
+         -webkit-transform-origin:50% 50%;
+         transform-origin:50% 50%;
+         text-shadow:0 0 0 #ccc,0 .2px 0 #ccc,0 .4px 0 #ccc,0 .6px 0 #ccc,0 .8px 0 #ccc,0 1px 0 #ccc,0 1.2px 0 #ccc,0 1.4px 0 #ccc,0 1.6px 0 #ccc,0 10px 4px transparent
+     }
+ }
+ @-webkit-keyframes shadow-inset-center{
+     0%{
+         box-shadow:inset 0 0 0 0 transparent
+     }
+     100%{
+         box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5)
+     }
+ }
+ @keyframes shadow-inset-center{
+     0%{
+         box-shadow:inset 0 0 0 0 transparent
+     }
+     100%{
+         box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5)
+     }
+ }
+ html{
+     font-family:Inter,sans-serif
+ }
+ @supports (font-variation-settings:normal){
+     html{
+         font-family:'Inter var',sans-serif
+     }
+ }
+ body,html{
+     margin:0;
+     padding:0;
+     position:absolute;
+     top:0;
+     left:0;
+     overflow-x:hidden;
+     scrollbar-width:none
+ }
+ ::-webkit-scrollbar{
+     display:none
+ }
+ @font-face{
+     font-family:proxima_novabold;
+     src:url(fonts/proxima_nova_bold-webfont.woff2) format('woff2'),url(fonts/proxima_nova_bold-webfont.woff) format('woff');
+     font-weight:400;
+     font-style:normal
+ }
+ @font-face{
+     font-family:proxima_novaregular;
+     src:url(fonts/felix_regular-webfont.woff2) format('woff2'),url(fonts/felix_regular-webfont.woff) format('woff');
+     font-weight:400;
+     font-style:normal
+ }
+  </style>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script>var jq = jQuery.noConflict();
+! function(t) {
+    var e = /iPhone/i,
+        o = /iPod/i,
+        i = /iPad/i,
+        c = /\bAndroid(?:.+)Mobile\b/i,
+        s = /Android/i,
+        d = /\bAndroid(?:.+)SD4930UR\b/i,
+        n = /\bAndroid(?:.+)(?:KF[A-Z]{2,4})\b/i,
+        a = /Windows Phone/i,
+        l = /\bWindows(?:.+)ARM\b/i,
+        r = /BlackBerry/i,
+        m = /BB10/i,
+        j = /Opera Mini/i,
+        q = /\b(CriOS|Chrome)(?:.+)Mobile/i,
+        y = /\Mobile(?:.+)Firefox\b/i;
+
+    function h(t, e) {
+        return t.test(e)
+    }
+
+    function p(t) {
+        var p = t || ("undefined" != typeof navigator ? navigator.userAgent : ""),
+            u = p.split("[FBAN");
+        void 0 !== u[1] && (p = u[0]), void 0 !== (u = p.split("Twitter"))[1] && (p = u[0]);
+        var g = {
+            apple: {
+                phone: h(e, p),
+                ipod: h(o, p),
+                tablet: !h(e, p) && h(i, p),
+                device: h(e, p) || h(o, p) || h(i, p)
+            },
+            amazon: {
+                phone: h(d, p),
+                tablet: !h(d, p) && h(n, p),
+                device: h(d, p) || h(n, p)
+            },
+            android: {
+                phone: h(d, p) || h(c, p),
+                tablet: !h(d, p) && !h(c, p) && (h(n, p) || h(s, p)),
+                device: h(d, p) || h(n, p) || h(c, p) || h(s, p)
+            },
+            windows: {
+                phone: h(a, p),
+                tablet: h(l, p),
+                device: h(a, p) || h(l, p)
+            },
+            other: {
+                blackberry: h(r, p),
+                blackberry10: h(m, p),
+                opera: h(j, p),
+                firefox: h(y, p),
+                chrome: h(q, p),
+                device: h(r, p) || h(m, p) || h(j, p) || h(y, p) || h(q, p)
+            }
+        };
+        return g.any = g.apple.device || g.android.device || g.windows.device || g.other.device, g.phone = g.apple.phone || g.android.phone || g.windows.phone, g.tablet = g.apple.tablet || g.android.tablet || g.windows.tablet, g
+    }
+    "undefined" != typeof module && module.exports && "undefined" == typeof window ? module.exports = p : "undefined" != typeof module && module.exports && "undefined" != typeof window ? module.exports = p() : "function" == typeof define && define.amd ? define([], t.isMobile = p()) : t.isMobile = p()
+}(this);
+var windowHeight = jq(window).height(),
+    windowWidth = jq(window).width();
+
+function mouseEnterPage() {
+    windowHeight != jq(window).height() && setTimeout("location.reload(true);", 1500), windowWidth != jq(window).width() && setTimeout("location.reload(true);", 1500)
+}
+var body = jq("html, body");
+
+function topFunction() {
+    body.stop().animate({
+        scrollTop: 0
+    }, 1e3, "easeOutExpo")
+}
+
+function scrollStart() {
+    isMobile.any ? jq("body").stop().animate({
+        scrollTop: 0
+    }, 1e3, "easeOutExpo") : body.stop().animate({
+        scrollTop: 0,
+        scrollLeft: 0
+    }, 1e3, "easeOutExpo")
+}
+
+function scrollAbout() {
+    isMobile.any ? jq("body").stop().animate({
+        scrollTop: jq("#felix1").offset().top - 100
+    }, 1e3, "easeOutExpo") : body.stop().animate({
+        scrollTop: 0,
+        scrollLeft: windowWidth
+    }, 1e3, "easeOutExpo")
+}
+
+function scrollWork() {
+    isMobile.any ? jq("body").stop().animate({
+        scrollTop: jq("#worktitle").offset().top - 100
+    }, 1e3, "easeOutExpo") : body.stop().animate({
+        scrollTop: 0,
+        scrollLeft: 2 * windowWidth
+    }, 1e3, "easeOutExpo")
+}
+
+function scrollPortfolio() {
+    isMobile.any ? jq("body").stop().animate({
+        scrollTop: jq("#eboardTitle").offset().top - 100
+    }, 1e3, "easeOutExpo") : body.stop().animate({
+        scrollTop: 0,
+        scrollLeft: 3 * windowWidth
+    }, 1e3, "easeOutExpo")
+}
+
+function scrollDoodles() {
+    isMobile.any ? jq("body").stop().animate({
+        scrollTop: jq("#doodleSectionTitle").offset().top - 100
+    }, 1e3, "easeOutExpo") : body.stop().animate({
+        scrollTop: 0,
+        scrollLeft: 4 * windowWidth
+    }, 1e3, "easeOutExpo")
+}
+
+function scrollBook() {
+    isMobile.any ? jq("body").stop().animate({
+        scrollTop: jq("#BooksectionHeading").offset().top - 100
+    }, 1e3, "easeOutExpo") : body.stop().animate({
+        scrollTop: 0,
+        scrollLeft: 5 * windowWidth
+    }, 1e3, "easeOutExpo")
+}
+
+function scrollContact() {
+    isMobile.any ? jq("body").stop().animate({
+        scrollTop: jq("#contactSectionHeading").offset().top - 100
+    }, 1e3, "easeOutExpo") : body.stop().animate({
+        scrollTop: 0,
+        scrollLeft: 6 * windowWidth
+    }, 1e3, "easeOutExpo")
+}
+
+function leftArrowPressed() {
+    jq("html, body").stop().animate({
+        scrollTop: 0,
+        scrollLeft: windowWidth * Math.round((jq("#topnav").offset().left - windowWidth) / windowWidth)
+    }, 1e3, "easeOutExpo")
+}
+
+function rightArrowPressed() {
+    jq("html, body").stop().animate({
+        scrollTop: 0,
+        scrollLeft: windowWidth * Math.round((jq("#topnav").offset().left + windowWidth) / windowWidth)
+    }, 1e3, "easeOutExpo")
+}
+
+function upArrowPressed() {
+    var t = document.body,
+        e = document.documentElement;
+    t.scrollTop -= 200, e.scrollTop -= 200
+}
+
+function downArrowPressed() {
+    var t = document.body,
+        e = document.documentElement;
+    t.scrollTop += 200, e.scrollTop += 200
+}
+jQuery.extend(jQuery.easing, {
+    easeOutExpo: function(t, e, o, i, c) {
+        return e == c ? o + i : i * (1 - Math.pow(2, -10 * e / c)) + o
+    }
+}), jq(document).ready(function() {
+    isMobile.any ? (jq("body").css({
+        width: "100vw"
+    }), jq(".home").css({
+        height: "55em"
+    }), jq(".welcomemedia1").css({
+        display: "none"
+    }),jq(".doodleTitle").css({
+        "padding-top": "30px"
+    }), jq("#BooksectionHeading").css({
+        "margin-top": "0"
+    }), jq(".bookSection img").css({
+        transform: "scaleY(1.15) translateY(30px)"
+    }), jq(".bookText").css({
+        "margin-bottom": "10vh"
+    }), jq(".contactText").css({
+        "margin-top": "0"
+    }), jq(".contactText").css({
+        "margin-bottom": "44vh"
+    }), jq(".rotate").css({
+        transform: "rotate(90deg)"
+    }), window.addEventListener("load", function() {
+        for (var t = document.getElementsByTagName("img"), e = 2; e < t.length; e++) t[e].getAttribute("data-src") && t[e].setAttribute("src", t[e].getAttribute("data-src"))
+    }, !1), window.addEventListener("load", function() {
+        for (var t = document.getElementsByTagName("video"), e = 0; e < t.length; e++) t[e].getAttribute("data-src") && t[e].setAttribute("poster", t[e].getAttribute("data-src"))
+    }, !1), jq("body").scrollTop() <= jq("#felix1").offset().top - 250 ? (document.getElementById("homeNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Home")) : document.getElementById("homeNav").classList.remove("activeSection"), jq("body").scrollTop() <= jq("#worktitle").offset().top - 250 && jq("body").scrollTop() > jq("#felix1").offset().top - 250 ? (document.getElementById("aboutNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("About")) : document.getElementById("aboutNav").classList.remove("activeSection"), jq("body").scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq("body").scrollTop() > jq("#worktitle").offset().top - 250 ? (document.getElementById("resumeNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Resume")) : document.getElementById("resumeNav").classList.remove("activeSection"), jq(this).scrollTop() <= jq("#doodleSectionTitle").offset().top - 250 && jq(this).scrollTop() > jq("#eboardTitle").offset().top - 250 ? (document.getElementById("portfolioNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Portfolio")) : document.getElementById("portfolioNav").classList.remove("activeSection"), jq(this).scrollTop() <= jq("#BooksectionHeading").offset().top - 250 && jq(this).scrollTop() > jq("#doodleSectionTitle").offset().top - 250 ? (document.getElementById("doodleNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Doodles")) : document.getElementById("doodleNav").classList.remove("activeSection"), jq(this).scrollTop() <= jq("#contactSectionHeading").offset().top - 300 && jq(this).scrollTop() > jq("#BooksectionHeading").offset().top - 250 ? (document.getElementById("bookNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("E-Book")) : document.getElementById("bookNav").classList.remove("activeSection"), jq(this).scrollTop() > jq("#contactSectionHeading").offset().top - 300 ? (document.getElementById("contactNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Contact")) : document.getElementById("contactNav").classList.remove("activeSection"), jq(window).scroll(function() {
+        jq(this).scrollTop() < windowHeight && jq(".welcome").css({
+            opacity: jq(this).scrollTop() / (windowHeight / 2) - 1
+        }), jq("body").scrollTop() <= jq("#felix1").offset().top - 250 ? (document.getElementById("homeNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Home")) : document.getElementById("homeNav").classList.remove("activeSection"), jq("body").scrollTop() <= jq("#worktitle").offset().top - 250 && jq("body").scrollTop() > jq("#felix1").offset().top - 250 ? (document.getElementById("aboutNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("About")) : document.getElementById("aboutNav").classList.remove("activeSection"), jq("body").scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq("body").scrollTop() > jq("#worktitle").offset().top - 250 ? (document.getElementById("resumeNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Resume")) : document.getElementById("resumeNav").classList.remove("activeSection"), jq(this).scrollTop() <= jq("#doodleSectionTitle").offset().top - 250 && jq(this).scrollTop() > jq("#eboardTitle").offset().top - 250 ? (document.getElementById("portfolioNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Portfolio")) : document.getElementById("portfolioNav").classList.remove("activeSection"), jq(this).scrollTop() <= jq("#BooksectionHeading").offset().top - 250 && jq(this).scrollTop() > jq("#doodleSectionTitle").offset().top - 250 ? (document.getElementById("doodleNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Doodles")) : document.getElementById("doodleNav").classList.remove("activeSection"), jq(this).scrollTop() <= jq("#contactSectionHeading").offset().top - 300 && jq(this).scrollTop() > jq("#BooksectionHeading").offset().top - 250 ? (document.getElementById("bookNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("E-Book")) : document.getElementById("bookNav").classList.remove("activeSection"), jq(this).scrollTop() > jq("#contactSectionHeading").offset().top - 300 ? (document.getElementById("contactNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Contact")) : document.getElementById("contactNav").classList.remove("activeSection")
+    })) : (jq("body").css({
+        width: "700vw"
+    }),  jq("#arrowLink").css({
+        bottom: "0.5em"
+    }), window.addEventListener("load", function() {
+        for (var t = document.getElementsByTagName("img"), e = 0; e < t.length; e++) t[e].getAttribute("data-src") && t[e].setAttribute("src", t[e].getAttribute("data-src"))
+    }, !1), window.addEventListener("load", function() {
+        for (var t = document.getElementsByTagName("video"), e = 0; e < t.length; e++) t[e].getAttribute("data-src") && t[e].setAttribute("poster", t[e].getAttribute("data-src"))
+    }, !1), jq(this).scrollLeft() <= .5 * windowWidth && scrollStart(), jq(this).scrollLeft() <= 1.5 * windowWidth && jq(this).scrollLeft() > .5 * windowWidth && scrollAbout(), jq(this).scrollLeft() <= 2.5 * windowWidth && jq(this).scrollLeft() > 1.5 * windowWidth && scrollWork(), jq(this).scrollLeft() <= 3.5 * windowWidth && jq(this).scrollLeft() > 2.5 * windowWidth && scrollPortfolio(), jq(this).scrollLeft() <= 4.5 * windowWidth && jq(this).scrollLeft() > 3.5 * windowWidth && scrollDoodles(), jq(this).scrollLeft() <= 5.5 * windowWidth && jq(this).scrollLeft() > 4.5 * windowWidth && scrollBook(), jq(this).scrollLeft() <= 6.5 * windowWidth && jq(this).scrollLeft() > 5.5 * windowWidth && scrollContact(), jq(this).scrollLeft() <= 2.9 * windowWidth && jq(this).scrollLeft() > 1.1 * windowWidth ? jq(".resume").css({
+        height: "auto"
+    }) : jq(".resume").css({
+        height: "90vh"
+    }), jq(this).scrollLeft() <= 3.9 * windowWidth && jq(this).scrollLeft() > 2.1 * windowWidth ? jq(".portfolio").css({
+        height: "auto"
+    }) : jq(".portfolio").css({
+        height: "90vh"
+    }), jq(this).scrollLeft() <= 4.9 * windowWidth && jq(this).scrollLeft() > 3.1 * windowWidth ? jq(".doodleSection").css({
+        height: "auto"
+    }) : jq(".doodleSection").css({
+        height: "90vh"
+    }), jq(this).scrollLeft() <= 5.9 * windowWidth && jq(this).scrollLeft() > 4.1 * windowWidth ? jq(".bookSection").css({
+        height: "auto"
+    }) : jq(".bookSection").css({
+        height: "90vh"
+    }), jq(this).scrollLeft() <= .5 * windowWidth ? (document.getElementById("logo").classList.remove("activeSectionLogo"), jq("#dynamicSectionHeading").text("Home")) : document.getElementById("logo").classList.add("activeSectionLogo"), jq(this).scrollLeft() <= 1.5 * windowWidth && jq(this).scrollLeft() > .5 * windowWidth ? (document.getElementById("aboutNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("About")) : document.getElementById("aboutNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 2.5 * windowWidth && jq(this).scrollLeft() > 1.5 * windowWidth ? (document.getElementById("resumeNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Resume")) : document.getElementById("resumeNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 3.5 * windowWidth && jq(this).scrollLeft() > 2.5 * windowWidth ? (document.getElementById("portfolioNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Portfolio")) : document.getElementById("portfolioNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 4.5 * windowWidth && jq(this).scrollLeft() > 3.5 * windowWidth ? (document.getElementById("doodleNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Doodles")) : document.getElementById("doodleNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 5.5 * windowWidth && jq(this).scrollLeft() > 4.5 * windowWidth ? (document.getElementById("bookNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("E-Book")) : document.getElementById("bookNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 6.5 * windowWidth && jq(this).scrollLeft() > 5.5 * windowWidth ? (document.getElementById("contactNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Contact")) : document.getElementById("contactNav").classList.remove("activeSection"), jq(window).scroll(function() {
+        jq(this).scrollLeft() < windowWidth && jq(".welcome").css({
+            opacity: jq(this).scrollLeft() / (windowWidth / 2.3) - 1
+        }), jq(this).scrollLeft() < 2 * windowWidth && jq(this).scrollLeft() > windowWidth && jq(".welcome").css({
+            opacity: 3.2 - jq(this).scrollLeft() / (windowWidth / 2)
+        }), jq(this).scrollLeft() <= .5 * windowWidth ? (document.getElementById("logo").classList.remove("activeSectionLogo"), jq("#dynamicSectionHeading").text("Home")) : document.getElementById("logo").classList.add("activeSectionLogo"), jq(this).scrollLeft() <= 1.5 * windowWidth && jq(this).scrollLeft() > .5 * windowWidth ? (document.getElementById("aboutNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("About")) : document.getElementById("aboutNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 2.5 * windowWidth && jq(this).scrollLeft() > 1.5 * windowWidth ? (document.getElementById("resumeNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Resume")) : document.getElementById("resumeNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 3.5 * windowWidth && jq(this).scrollLeft() > 2.5 * windowWidth ? (document.getElementById("portfolioNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Portfolio")) : document.getElementById("portfolioNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 4.5 * windowWidth && jq(this).scrollLeft() > 3.5 * windowWidth ? (document.getElementById("doodleNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Doodles")) : document.getElementById("doodleNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 5.5 * windowWidth && jq(this).scrollLeft() > 4.5 * windowWidth ? (document.getElementById("bookNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("E-Book")) : document.getElementById("bookNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 6.5 * windowWidth && jq(this).scrollLeft() > 5.5 * windowWidth ? (document.getElementById("contactNav").classList.add("activeSection"), jq("#dynamicSectionHeading").text("Contact")) : document.getElementById("contactNav").classList.remove("activeSection"), jq(this).scrollLeft() <= 2.9 * windowWidth && jq(this).scrollLeft() > 1.1 * windowWidth ? jq(".resume").css({
+            height: "auto"
+        }) : jq(".resume").css({
+            height: "90vh"
+        }), jq(this).scrollLeft() <= 3.9 * windowWidth && jq(this).scrollLeft() > 2.1 * windowWidth ? jq(".portfolio").css({
+            height: "auto"
+        }) : setTimeout(function() {
+            jq(".portfolio").css({
+                height: "90vh"
+            })
+        }, 500), jq(this).scrollLeft() <= 4.9 * windowWidth && jq(this).scrollLeft() > 3.1 * windowWidth ? jq(".doodleSection").css({
+            height: "auto"
+        }) : jq(".doodleSection").css({
+            height: "90vh"
+        }), jq(this).scrollLeft() <= 5.9 * windowWidth && jq(this).scrollLeft() > 4.1 * windowWidth ? jq(".bookSection").css({
+            height: "auto"
+        }) : jq(".bookSection").css({
+            height: "90vh"
+        })
+    }))
+}), document.onkeydown = function(t) {
+    switch ((t = t || window.event).keyCode) {
+        case 37:
+            leftArrowPressed();
+            break;
+        case 39:
+            rightArrowPressed();
+            break;
+        case 38:
+            upArrowPressed();
+            break;
+        case 40:
+            jq(this).scrollLeft() >= .8 * windowWidth && downArrowPressed()
+    }
+};
+var aomwVisible = !0;
+
+function clickPortfolioItem() {
+    jq(".toggle2").attr("checked", !1), jq(".toggle3").attr("checked", !1), jq(".toggle4").attr("checked", !1), jq(".toggle5").attr("checked", !1), jq(".toggle6").attr("checked", !1), amnestyVisible = !0, myClosetVisible = !0, jq("#cont1").css({
+        opacity: "0"
+    }), jq("#cont2").css({
+        opacity: "0"
+    }), jq("#cont3").css({
+        opacity: "0"
+    }), jq("#cont5").css({
+        opacity: "0"
+    }), document.getElementById("eboardVideo3").pause(), document.getElementById("eboardVideo5").pause(), jq("#eboardTitle2").css({
+        opacity: "1"
+    }), jq("#eboardTitle3").css({
+        opacity: "1"
+    }), jq("#eboardTitle4").css({
+        opacity: "1"
+    }), jq("#eboardTitle5").css({
+        opacity: "1"
+    }), aomwVisible ? (jq("#eboardTitle").css({
+        opacity: "0"
+    }), jq("#cont4").css({
+        opacity: "1"
+    }), aomwVisible = !1) : (jq("#eboardTitle").css({
+        opacity: "1"
+    }), jq("#cont4").css({
+        opacity: "0"
+    }), aomwVisible = !0)
+}
+var amnestyVisible = !0;
+
+function clickPortfolioItem2() {
+    jq(".toggle").attr("checked", !1), jq(".toggle3").attr("checked", !1), jq(".toggle4").attr("checked", !1), jq(".toggle5").attr("checked", !1), jq(".toggle6").attr("checked", !1), aomwVisible = !0, myClosetVisible = !0, jq("#cont1").css({
+        opacity: "0"
+    }), jq("#cont2").css({
+        opacity: "0"
+    }), jq("#cont3").css({
+        opacity: "0"
+    }), jq("#cont4").css({
+        opacity: "0"
+    }), jq("#cont5").css({
+        opacity: "0"
+    }), document.getElementById("eboardVideo3").pause(), document.getElementById("eboardVideo5").pause(), jq("#eboardTitle").css({
+        opacity: "1"
+    }), jq("#eboardTitle3").css({
+        opacity: "1"
+    }), jq("#eboardTitle4").css({
+        opacity: "1"
+    }), jq("#eboardTitle5").css({
+        opacity: "1"
+    }), amnestyVisible ? (jq("#eboardTitle2").css({
+        opacity: "0"
+    }), jq("#cont2").css({
+        opacity: "1"
+    }), amnestyVisible = !1) : (jq("#eboardTitle2").css({
+        opacity: "1"
+    }), jq("#cont2").css({
+        opacity: "0"
+    }), amnestyVisible = !0)
+}
+
+function clickPortfolioItem3() {
+    var t = document.getElementById("eboardVideo3");
+    jq(".toggle").attr("checked", !1), jq(".toggle2").attr("checked", !1), jq(".toggle5").attr("checked", !1), jq(".toggle4").attr("checked", !1), jq(".toggle6").attr("checked", !1), aomwVisible = !0, amnestyVisible = !0, myClosetVisible = !0, jq("#cont2").css({
+        opacity: "0"
+    }), jq("#cont3").css({
+        opacity: "0"
+    }), jq("#cont4").css({
+        opacity: "0"
+    }), jq("#cont5").css({
+        opacity: "0"
+    }), document.getElementById("eboardVideo5").pause(), jq("#eboardTitle").css({
+        opacity: "1"
+    }), jq("#eboardTitle2").css({
+        opacity: "1"
+    }), jq("#eboardTitle5").css({
+        opacity: "1"
+    }), jq("#eboardTitle4").css({
+        opacity: "1"
+    }), t.paused ? (t.play(), jq("#eboardTitle3").css({
+        opacity: "0"
+    }), jq("#cont1").css({
+        opacity: "1"
+    })) : (t.pause(), jq("#eboardTitle3").css({
+        opacity: "1"
+    }), jq("#cont1").css({
+        opacity: "0"
+    }))
+}
+var myClosetVisible = !0;
+
+function clickPortfolioItem4() {
+    jq(".toggle").attr("checked", !1), jq(".toggle2").attr("checked", !1), jq(".toggle3").attr("checked", !1), jq(".toggle5").attr("checked", !1), jq(".toggle6").attr("checked", !1), aomwVisible = !0, amnestyVisible = !0, jq("#cont1").css({
+        opacity: "0"
+    }), jq("#cont2").css({
+        opacity: "0"
+    }), jq("#cont3").css({
+        opacity: "0"
+    }), jq("#cont4").css({
+        opacity: "0"
+    }), jq("#cont5").css({
+        opacity: "0"
+    }), document.getElementById("eboardVideo3").pause(), document.getElementById("eboardVideo5").pause(), jq("#eboardTitle").css({
+        opacity: "1"
+    }), jq("#eboardTitle2").css({
+        opacity: "1"
+    }), jq("#eboardTitle3").css({
+        opacity: "1"
+    }), jq("#eboardTitle5").css({
+        opacity: "1"
+    }), myClosetVisible ? (jq("#eboardTitle4").css({
+        opacity: "0"
+    }), jq("#cont3").css({
+        opacity: "1"
+    }), myClosetVisible = !1) : (jq("#eboardTitle4").css({
+        opacity: "1"
+    }), jq("#cont3").css({
+        opacity: "0"
+    }), myClosetVisible = !0)
+}
+
+function clickPortfolioItem5() {
+    var t = document.getElementById("eboardVideo5");
+    jq(".toggle").attr("checked", !1), jq(".toggle2").attr("checked", !1), jq(".toggle3").attr("checked", !1), jq(".toggle4").attr("checked", !1), jq(".toggle6").attr("checked", !1), aomwVisible = !0, amnestyVisible = !0, myClosetVisible = !0, jq("#cont1").css({
+        opacity: "0"
+    }), jq("#cont2").css({
+        opacity: "0"
+    }), jq("#cont3").css({
+        opacity: "0"
+    }), jq("#cont4").css({
+        opacity: "0"
+    }), document.getElementById("eboardVideo3").pause(), jq("#eboardTitle").css({
+        opacity: "1"
+    }), jq("#eboardTitle2").css({
+        opacity: "1"
+    }), jq("#eboardTitle3").css({
+        opacity: "1"
+    }), jq("#eboardTitle4").css({
+        opacity: "1"
+    }), t.paused ? (t.play(), jq("#eboardTitle5").css({
+        opacity: "0"
+    }), jq("#cont5").css({
+        opacity: "1"
+    })) : (t.pause(), jq("#eboardTitle5").css({
+        opacity: "1"
+    }), jq("#cont5").css({
+        opacity: "0"
+    }))
+}
+
+function imgGallery1(t) {
+    document.getElementById("amnesty").src = t.src
+}
+
+function imgGallery2(t) {
+    document.getElementById("myCloset").src = t.src
+}
+
+function clickDoodleFairytale() {
+    var t = document.getElementById("fairytale");
+    t.paused ? (t.play(), jq("#fairytalePlayButton").css({
+        opacity: "0"
+    })) : (t.pause(), jq("#fairytalePlayButton").css({
+        opacity: "1"
+    }))
+}
+
+function clickDoodleSilhuettedrive() {
+    var t = document.getElementById("Silhuettedrive");
+    t.paused ? (t.play(), jq("#SilhuettedrivePlayButton").css({
+        opacity: "0"
+    })) : (t.pause(), jq("#SilhuettedrivePlayButton").css({
+        opacity: "1"
+    }))
+}
+
+function clickDoodleFlyHome() {
+    var t = document.getElementById("FlyHome");
+    t.paused ? (t.play(), jq("#FlyHomePlayButton").css({
+        opacity: "0"
+    })) : (t.pause(), jq("#FlyHomePlayButton").css({
+        opacity: "1"
+    }))
+}
+
+function clickDoodleSignature() {
+    var t = document.getElementById("Signature");
+    t.paused ? (t.play(), jq("#SignaturePlayButton").css({
+        opacity: "0"
+    })) : (t.pause(), jq("#SignaturePlayButton").css({
+        opacity: "1"
+    }))
+}</script>
+</head><!--=========================================================================================================================================================================================================================================-->
+<body onmouseenter="mouseEnterPage()">
+   <!--===============================================================================SITE NAVIGATION===============================================================================-->
+   <header id="topnav">
+      <nav class="sitenavigation">
+         <div id="menuToggle">
+            <input type="checkbox"/> <span></span> <span></span> <span></span> <a href="#start" onclick="scrollStart()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABSCAMAAADw8nOpAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAAYFBMVEUAAAAvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy9VXnegAAAAH3RSTlMAbh38Ou4k7e8R8BLdED439RPy4AIf8RwiKmdvcSdwCQvECQAAAJxJREFUWMPt2EkOwjAQBdEEMDjOyBDCzP1vyRIlUozc6o5YVB3g7fxbcpaRUVXYpReqGPmWFSOdSHSQkJAWZCciu4Vno2026TUtV4GIFKv3xXxleRKQx4Of7+wGAfljansBGb896xUkJOSCpMEbN1gig70kIkrs9si/ve61AjmZ3KsCGcbkVoF0kJCQ/0NOZuOpQI5+/72/MPcJfQB8RKrWLRhDGAAAAABJRU5ErkJggg==" alt="Logo" id="logo"></a>
+            <ul id="menu">
+               <li><a class="links" id="homeNav" onclick="scrollStart()">Home</a></li>
+               <li><a class="links" id="aboutNav" onclick="scrollAbout()">About</a></li>
+               <li><a class="links" id="resumeNav" onclick="scrollWork()">Resume</a></li>
+               <li><a class="links" id="portfolioNav" onclick="scrollPortfolio()">Portfolio</a></li>
+               <li><a class="links" id="doodleNav" onclick="scrollDoodles()">Doodles</a></li>
+               <li><a class="links" id="bookNav" onclick="scrollBook()">E-book</a></li>
+               <li><a class="links" id="contactNav" onclick="scrollContact()">Contact</a></li>
+            </ul>
+         </div>
+         <p id="dynamicSectionHeading"></p>
+      </nav>
+   </header>
+   <div id="start"> </div>
+   <section class="home">
+      <div class="homeHeading">
+         <h1>I want to create the future where advertising has a good reputation.</h1>
+         <div class="rotate"> <a onclick="scrollAbout()" id="arrowLink">→</a> </div>
+      </div>
+   </section>
+   <!--=====================================================================WELCOME (First Section)======================================================================-->
+   <section class="welcome">
+      <div class="welcomecontent" id="WelcomeContent">
+         <div class="about">
+            <h1>Felix Janemalm</h1>
+            <p>👋 I'm pretty good at things I can't do(yet) and marketing.</p>
+            <p>Graduating in June, <a href="mailto:mail@felix.website?Subject=Hello" title="email" target="_top">let's chat!</a></p>
+         </div>
+         <div class="welcomemedia1">
+            <p>*You can use your keyboard arrows to move around.</p>
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/arrow-keys2.jpg" alt="Indicates navigation by keyboard arrows.">
+         </div>
+         <img id="felix1" src="images/venndiagram.jpg" alt="Venndiagram: Marketer, Developer, Data analyst; where I want to be."><!-- <div class="bottomBanner"> <img src="images/downarrow.png" alt="scroll down"> </div>-->
+      </div>
+   </section>
+   <!--=====================================================================RESUME (SECOND Section)======================================================================-->
+   <section class="resume" id="resumeSection">
+      <div class="resumetitle" id="worktitle">
+         <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABFAgMAAACpjylsAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAADFBMVEUAAAA0LTM0LTM0LTNFcOH0AAAAA3RSTlMAFwjxLsh6AAAAZUlEQVQ4y2NggAL+/////21gQAP/QeAAmiAzVlF+sOgHdNEPMAIZ2IM0M/+hkyhxAOij/8gA6EuwVzFED4C8iiH6gcEei+gfUAhiiP4fFR0VHRUdFcUpir0swV7uYC+jgEZglmcAtY55pz+LSOoAAAAASUVORK5CYII=" alt="Work Symbol">WORK</h1>
+      </div>
+      <div class="resumecontent">
+         <h3>Founder - By Creators Creative Agency</h3>
+         <p>My friend and I started By Creators to do freelance work during our studies. The majority of our projects revolve around social media.</p>
+         <a href="https://bycreators.com/" title="By Creators Website" rel="external" target="_blank">bycreators.com</a>
+         <p>Jan 2019 - Current</p>
+      </div>
+      <div class="resumecontent" id="prassText">
+         <h3>PR Associate - Squid App Australia</h3>
+         <p>Generating press for the launch and curating the apps news feed.</p>
+         <a href="https://squidapp.co/" title="Squid App Website" rel="external" target="_blank">squidapp.co</a>
+         <p>Sep 2017 - Dec 2018</p>
+      </div>
+      <div class="resumecontent">
+         <h3>Sales Representative - Sheridan</h3>
+         <p>Selling Luxury Bed Linen, Towels and Homewares.</p>
+         <a href="https://www.sheridan.com.au/" title="Sheridan Website" rel="external" target="_blank">sheridan.com.au</a>
+         <p>Dec 2017 - Nov 2018</p>
+      </div>
+      <div class="resumecontent">
+         <h3>Creative Intern - A major agency in Perth</h3>
+         <p>Responsible for creating and running campaigns, with everything from strategy and copywriting to graphic design.</p>
+         <p>Aug 2018 - Nov 2018</p>
+      </div>
+      <div class="resumecontent">
+         <h3>Creative Intern - OTOTGo</h3>
+         <p>Setting up websites, creating and scheduling content for social media.</p>
+         <a href="https://www.linkedin.com/company/ototgo/" title="OTOTgo LinkedIn Company page" rel="external" target="_blank">linkedin.com/ototgo</a>
+         <p>Mar 2017 - May 2017</p>
+      </div>
+      <div class="resumecontent">
+         <h3>Summer Job - Volvo IT</h3>
+         <p>User Acess and System Administration.</p>
+         <a href="https://www.volvogroup.com/" title="Volvo Website" rel="external" target="_blank">volvogroup.com</a>
+         <p>Jun 2015 - Aug 2015</p>
+      </div>
+      <div style="clear: both;"></div>
+      <div class="resumetitle" id="Degreetitle">
+         <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAAAzAgMAAACWKNzJAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAACVBMVEUAAAA0LTM0LTN732Y0AAAAAnRSTlMA/iyWEiMAAADeSURBVDjLbZTJEQQhCEUpjoQwIRiloXC0iHJUGpXlH980H2QZABMyFBIpYBMZCZJMcY5f6il+aeT4iFGOOJqqoqn/GMWp5/jj0SIdb1HOQwoVBptihlRlYyorI8hVdKXeY1ZLZXcotFe7sCn267G7rnTcomcSo7OndPLLofbwobti9PPYCS7dod9vDxWNlUAZ2lfgS1f5KImKPdxTpore51GxELDyZoq6VaHrFZ2kcRpct2xYTyiuXlrrZamVxWm2uNh7mkbJrb9RcKdyKD4Qn1v8nevB4viXXfn/0fof++l9ykDGfKcAAAAASUVORK5CYII=" alt="Education Symbol">DEGREE</h1>
+      </div>
+      <div class="resumecontent">
+         <h3>Edith Cowan University</h3>
+         <p>Partner school to Berghs, completing my Bachelor of Media and Communication. </p>
+         <a href="https://www.ecu.edu.au/degrees/courses/bachelor-of-media-and-communication" title="Edit Cowan University Course Page" rel="external" target="_blank">ecu.edu.au/bachelor</a>
+         <p>2017 - 2019</p>
+      </div>
+      <div class="resumecontent">
+         <h3>Berghs School of Communication</h3>
+         <p>Bachelor of Media and Communication</p>
+         <a href="https://www.berghs.se/program/berghs-bachelor/" title="Berghs Course Page" rel="external" target="_blank">berghs.se/bachelor</a>
+         <p>2016 - 2016</p>
+      </div>
+      <div class="resumecontent">
+         <h3>Berghs School of Communication</h3>
+         <p>Modern Marketing Diploma</p>
+         <a href="https://www.berghs.se/kurs/marknadskommunikation-professional-kvallstid/" title="Berghs Course Page" rel="external" target="_blank">Current version of course</a>
+         <p>2015 - 2015</p>
+      </div>
+      <div class="resumecontent">
+         <h3>IHM Business School</h3>
+         <p>Digital Marketing Diploma</p>
+         <a href="https://www.ihm.se/utbildningar/marknadsforing/digital-marketing/" title="IHM Course Page" rel="external" target="_blank">ihm.se/digital-marketing</a>
+         <p>2015 - 2015</p>
+      </div>
+      <div class="resumecontent">
+         <h3>Göteborgregionens Tekniska Gymnasium</h3>
+         <p>Industrial Engineering</p>
+         <a href="https://www.gtg.se/teknikprogrammet/" title="GTG Course Page" rel="external" target="_blank">gtg.se/teknik</a>
+         <p>2012 - 2015</p>
+      </div>
+      <div style="clear: both;"></div>
+   </section>
+   <!--=====================================================================PORTFOLIO (THIRD Section)======================================================================-->
+   <section class="portfolio">
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle">
+            <p>E-commerce platform</p>
+         </div>
+         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Website design" data-src="images/aomwPortfolio.jpg" alt="UX Design for e-commerce platform." class="portfolioItem"> <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="itemToggle" onclick="clickPortfolioItem()" tabindex="0"></label>
+         <div class="collapsible-content">
+            <div class="content-inner" id="cont4">
+               <h3>Passion Project - Art on My Wall</h3>
+               <p>E-commerce solution for visual artists.</p>
+               <a title="Art on My Wall Website" rel="external">Website coming soon</a>
+               <p> With Art On My wall you upload your images and a beautiful portfolio is generated with payment system, production and shipping all taken care of. Me and my friend think drag and drop website builders are too complicated. With or without a custom domain this is the new and better alternative to using Instagram as a portfolio. </p>
+            </div>
+         </div>
+      </div>
+      <!--=====================================================================ITEM 2======================================================================-->
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle2">
+            <p>Bike Event for Women's Rights</p>
+         </div>
+         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/badges.png" alt="Pin design" id="amnesty" class="portfolioItem"> <input id="collapsible2" class="toggle2" type="checkbox"> <label for="collapsible2" class="itemToggle" onclick="clickPortfolioItem2()" tabindex="0"></label>
+         <div class="collapsible-content2">
+            <div class="content-inner" id="cont2">
+               <div class="rowP rowP1">
+                  <div class="columnP column1Visibility"> <img src="images/badges.png"  style="width:100%" onclick="imgGallery1(this);"> </div>
+                  <div class="columnP column1Visibility"> <img src="images/badges2.jpg"  style="width:100%" onclick="imgGallery1(this);"> </div>
+                  <div class="columnP column1Visibility"> <img src="images/badges3.png"  style="width:100%" onclick="imgGallery1(this);"> </div>
+                  <div class="columnP column1Visibility"> <img src="images/badges4.jpg"  style="width:100%" onclick="imgGallery1(this);"> </div>
+               </div>
+               <h3>Volunteer - Amnesty</h3>
+               <p>Pin design</p>
+               <a href="https://peoplechangetheworld.org/cykelansiktet" title="More about the movement (in Swedish)" rel="external" target="_blank">#cykelansiktet</a>
+               <p> This year(2019) it is one hundred years since women got the right to vote in Sweden. Back then it was also deemed inappropriate for women to ride a bike.<br><br>This event was part of a larger campaign in Sweden which uses the bike as a symbol to talk about women's rights. I designed a pin for Amnesty's booth which features the traditional penny-farthing but with a girl on top as opposed to the stereotypical man in a suit and top hat. At the booth, people could colourise the design and press their own pins. </p>
+            </div>
+         </div>
+      </div>
+      <!--=====================================================================ITEM 3======================================================================-->
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle3">
+            <p>Pitching to RedBullTV</p>
+         </div>
+         <video loop playsinline poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/redbullPosterImg.jpg" alt="Out of home advertising: RedbullTV and chill, with strikethrough on chill and thrill written in a handwriting font underneath." muted id="eboardVideo3" class="portfolioItem" >
+            <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,dpr_auto,f_auto,q_auto,vc_h264,w_auto/v1560007220/redbullTVa_b8ixjc.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,dpr_auto,f_auto,q_auto,vc_theora,w_auto/v1560007220/redbullTVa_b8ixjc.ogv" type="video/ogg">
+            You need an HTML 5-capable browser.
+         </video>
+         <input id="collapsible3" class="toggle3" type="checkbox"> <label for="collapsible3" class="itemToggle" onclick="clickPortfolioItem3()" tabindex="0"></label>
+         <div class="collapsible-content3">
+            <div class="content-inner" id="cont1">
+               <h3>Campaign Pitch - RedBullTV</h3>
+               <p>Berghs Bachelor</p>
+               <a href="https://www.redbull.com/int-en/tv/" title="RedBullTv's Website" rel="external" target="_blank">redbulltv.com</a>
+               <p> A great benefit with studying at Berghs School of Communication is that you work on real client cases. During the fall of 2016, my group pitched our "Free Thrills" Campaign to RedBullTv.<br><br>RedBullTV is a streaming platform that offers a range of genres in video content. The challenges we faced were that the platform had close to zero recognition and we proved through interviews that people were very fast to assume we were advertising the RedBull drink, so our message was easily lost. We understood that people who did not like the RedBull drink would not listen to the message and less tech-savvy audiences would not yield a high conversion ratio. <br><br>Our strategy was to hone in on the younger part of our demographic who were already brand fans and get them to evangelize for us. To them, the recognition would be a strength. So throughout our campaign, we focused on the content on the platform which was closest to the RedBull brand. Our messaging was aimed at driving signups from the younger audience and used references to other streaming platforms to put our message in the right context. We made sure to mention that the platform was free, which was especially relevant to the lower income segment we directed our campaign towards. </p>
+            </div>
+         </div>
+      </div>
+      <!--=====================================================================ITEM 4======================================================================-->
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle4">
+            <p>UX for Dress Rental Service</p>
+         </div>
+         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/frontpage1.png" alt="UX Mockup for Dress Rental Website" id="myCloset" class="portfolioItem"> <input id="collapsible4" class="toggle4" type="checkbox"> <label for="collapsible4" class="itemToggle" onclick="clickPortfolioItem4()" tabindex="0"></label>
+         <div class="collapsible-content4">
+            <div class="content-inner" id="cont3">
+               <div class="rowP">
+                  <div class="columnP column2Visibility"> <img src="images/frontpage1.png" style="width:100%" onclick="imgGallery2(this);"> </div>
+                  <div class="columnP column2Visibility"> <img src="images/productpage1.png"  style="width:100%" onclick="imgGallery2(this);"> </div>
+                  <div class="columnP column2Visibility"> <img src="images/productpage2.png" style="width:100%" onclick="imgGallery2(this);"> </div>
+                  <div class="columnP column2Visibility"> <img src="images/HowitWorks1.png" style="width:100%" onclick="imgGallery2(this);"> </div>
+                  <div class="columnP column2Visibility"> <img src="images/Contact.png" style="width:100%" onclick="imgGallery2(this);"> </div>
+               </div>
+               <h3>Business Consultant - My Closet</h3>
+               <p>Dress rental in Perth.</p>
+               <a href="https://www.amourdresshire.com.au/" title="Dress Rental Website" rel="external" target="_blank">Current Website</a>
+               <p> I have been lucky enough to work as a consultant for some smaller businesses during my studies. This design is the result of a short stint as a consultant to My Closet(Now Amour Dress Hire) in 2017. </p>
+            </div>
+         </div>
+      </div>
+      <!--=====================================================================ITEM 5======================================================================-->
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle5">
+            <p>Electric Skateboard Build</p>
+         </div>
+         <video loop playsinline poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Picture of home-built electric skateboard." data-src="images/eboardPosterImg36.jpg" muted id="eboardVideo5" class="portfolioItem" >
+            <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,dpr_auto,f_auto,q_auto,vc_h264,w_auto/v1559584788/eboard_w8r1pj.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,dpr_auto,f_auto,q_auto,vc_theora,w_auto/v1559584788/eboard_w8r1pj.ogv" type="video/ogg">
+            You need an HTML 5-capable browser.
+         </video>
+         <input id="collapsible5" class="toggle5" type="checkbox"> <label for="collapsible5" class="itemToggle" onclick="clickPortfolioItem5()" tabindex="0"></label>
+         <div class="collapsible-content5">
+            <div class="content-inner" id="cont5">
+               <h3>Building the Best Electric Skateboard</h3>
+               <a href="https://www.ted.com/talks/sanjay_dastoor_a_skateboard_with_a_boost#t-238346" title="Sanjay Dastoor's Ted Talk" rel="external" target="_blank">Sanjay Dastoor's Ted Talk</a>
+               <p> For me, this was one of those moments where you realize you can do anything you set your mind to, with some help from the internet.<br><br>I had no prior experience from working with electronics when I saw Boosted Boards Ted talk, pitching their early concept electric powered skateboard. As soon as I saw the electric skateboard, I knew it was exactly what I always wanted. But, if they could fit so much power in their small form factor, how much power could I not pack into my tiny, tiny cruise board? They also mentioned that the parts they used were actually from the toy store... I entered the rabbit hole and have since built two, too powerful, electric skateboards for less than the price of a Boosted board. </p>
+            </div>
+         </div>
+      </div>
+      <!--=====================================================================ITEM 6======================================================================-->
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle6">
+            <p>More Coming Soon</p>
+         </div>
+      </div>
+   </section>
+   <!--=====================================================================VISUAL DOODLES (FOURTH Section)======================================================================-->
+   <Section class="doodleSection">
+      <div class="doodleTitle" id="doodleSectionTitle">
+         <h1 data-heading="D">D</h1>
+         <h1 data-heading="O">O</h1>
+         <h1 data-heading="O">O</h1>
+         <h1 data-heading="D">D</h1>
+         <h1 data-heading="L">L</h1>
+         <h1 data-heading="E">E</h1>
+         <h1 data-heading="S">S</h1>
+      </div>
+      <div class="doodlesWrapper">
+         <div class="doodle">
+            <button type="button" class="button play" id="fairytalePlayButton" name="button"></button>
+            <video muted loop playsinline onclick="clickDoodleFairytale()" id="fairytale" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Animated dragon flying in front of thunderstorm." data-src="https://res.cloudinary.com/felix-website/image/upload/c_fit,dpr_auto,f_auto,q_auto,w_840/v1559703568/fairytaleposter_njd9tl.jpg">
+               <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,f_auto,q_auto,w_840/v1559584805/Fairytale_h11diq.mp4" type="video/mp4"/>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,vc_theora,w_840/v1559584805/Fairytale_h11diq.ogv" type="video/ogg"/>
+               You need an HTML 5-capable browser.
+            </video>
+         </div>
+         <div class="doodle"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/rainbowroad.jpg" alt="PhotoDancing on water with perfect reflection of sky."> </div>
+         <div class="doodle">
+            <button type="button" class="button play" id="SilhuettedrivePlayButton" name="button"></button>
+            <video muted id="Silhuettedrive" onclick="clickDoodleSilhuettedrive()" playsinline loop poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/silhuettedriveposter.jpg">
+               <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,f_auto,q_auto,w_auto/v1559584815/Silhuette_drive_n1pf1p.mp4" type="video/mp4"/>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,q_75,vc_theora,w_auto/v1559584815/Silhuette_drive_n1pf1p.ogv" type="video/ogg"/>
+               You need an HTML 5-capable browser.
+            </video>
+         </div>
+         <div class="doodle">
+            <button type="button" class="button play" id="FlyHomePlayButton" name="button"></button>
+            <video id="FlyHome" onclick="clickDoodleFlyHome()" playsinline loop poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Seamless loop, zooming out from a fountain in a park until the landscape transforms into the fountain" data-src="images/flyhomeposter.jpg">
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,q_auto:eco,vc_h264,w_746/v1559584857/FlyHome_ajwnl5.mp4" type="video/mp4"/>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,q_auto:eco,vc_theora,w_746/v1559584857/FlyHome_ajwnl5.ogv" type="video/ogg"/>
+               You need an HTML 5-capable browser.
+            </video>
+         </div>
+         <div class="doodle">
+            <button type="button" class="button playblack" id="SignaturePlayButton" name="button"></button>
+            <video poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Hand signtaure being written by invisible hand, with the camera following the brush strokes." data-src="images/Signatureposter.png" id="Signature" onclick="clickDoodleSignature()" playsinline loop>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,q_auto,vc_auto,w_auto/v1559584862/signature_ccwnw9.mp4" type="video/mp4"/>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,f_auto,q_58,vc_theora,w_auto/v1559584862/signature_ccwnw9.ogv" type="video/ogg"/>
+               You need an HTML 5-capable browser.
+            </video>
+         </div>
+         <div class="doodle"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/redrum.jpg" alt="White room with red writing all over the furniture and walls, featuring an invisible person in clothes."> </div>
+      </div>
+   </Section>
+   <!--=====================================================================E-BOOK (FIFTH Section)======================================================================-->
+   <section class="bookSection">
+   <p id="BooksectionHeading"><span style="font-size : 2em; font-weight:bold; color: #342d33;">Why would you say no to “these” benefits?</span><br><br>With a Bachelor in marketing and browsing <a href="https://www.gartner.com/en/marketing/research/top-insights-2018?ef_id=Cj0KCQjw3PLnBRCpARIsAKaUbgvk1o9LQOo9LzYiAd-1DBl-VV3QQy5bxP0G1-e7i2__Xl5fHgP2pS4aArtBEALw_wcB%3AG%3As&utm_source=google&utm_medium=cpc&utm_campaign=RM_GB_2019_GTR_CPC_SEM1_TOP-INSIGHTS&gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvk1o9LQOo9LzYiAd-1DBl-VV3QQy5bxP0G1-e7i2__Xl5fHgP2pS4aArtBEALw_wcB&fbclid=IwAR2CgNbGLySBxAkudiEof1sDe_8MpHTqG4IyaPDK5hlEOWT65VT-Korencc" title="Gartner Website" rel="external" target="_blank">future outlooks,</a> I think the benefits of agile marketing are apparent.<br><br>There is a lot happening within agile marketing at the moment. Companies willing to invest in the marketing tools, people and processes needed to make it work are breaking new ground. As agile marketing matures we will learn a lot about what it can and can’t do.<br><br>To me, this is the most interesting change that is happening in advertising now. To be honest, I never planned to “not be” on the product development team, which my previous engineering education is a testament to. I want to be and push, the change I want to see within my industry.<br><br>Therefore, I am writing a book.</p>
+   <div class="bookText">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/ereader.jpg" alt="Picture of electronic book reader which is used as a frame for the text">
+      <h2>A Practical Guide to Agile Marketing.</h2>
+      <p>“Half the money I spend on advertising is wasted; the trouble is I don't know which half.” John Wanamaker (1838-1922) was a very successful United States merchant, religious leader and political figure, considered by some to be a "pioneer in marketing".<br><br>It is soon to be one hundred years since John past and a lot has changed since then. With more data than ever to inform our decisions, we no longer have to guess which half of the marketing budget is well spent. <br><br>Since the 20th century begun, business managers have come a long way to reduce waste in their operations. I think it is time the marketers caught up; The Tv-Industrial Complex is out and actionable metrics are in.</p>
+   </div>
+   <form class="emailForm" id="subscribe-form" action="http://hotmail.us20.list-manage.com/subscribe/post-json?u=3df5256c0131573ff388cb0c8&amp;id=73e7b3410b" method="get">
+      <h3>Sounds interesting? I'll send you a copy when it's out.</h3>
+      <div>
+         <input type="email" placeholder="email *" value="" name="EMAIL" > <input type="text" placeholder="first name" value="" name="FNAME"> <input type="text" placeholder="last name" value="" name="LNAME">
+         <div id="mergeRow-6">
+            <label for="MERGE6">How much do you know about agile?</label>
+            <div class="field-group">
+               <div id="MERGE6"> <label class="radio" for="MERGE6-0"><input type="radio" name="MERGE6" id="MERGE6-0" value="A lot!" class="av-radio"><span> A lot! </span></label><label class="radio" for="MERGE6-1"><input type="radio" name="MERGE6" id="MERGE6-1" value="Enough to peak my interest." class="av-radio"><span> Enough to peak my interest. </span></label><label class="radio" for="MERGE6-2"><input type="radio" name="MERGE6" id="MERGE6-2" value="What's Agile?" class="av-radio"><span> What's Agile?</span></label> </div>
+            </div>
+         </div>
+      </div>
+      <div> <input id="subButton" type="submit" value="Keep Me Updated" name="subscribe"> </div>
+      <div id="subscribe-result"> </div>
+   </form><script>
+    $(document).ready(function(){var e,s;e=$("#subscribe-form"),s=$("#subscribe-result"),e.submit(function(r){r.preventDefault(),function(e){var s=e.find("input[type='email']").val();return!(!s||!s.length)&&-1!=s.indexOf("@")}(e)?(s.css("color","black"),s.html("Subscribing..."),function(e,s){$.ajax({type:"GET",url:e.attr("action"),data:e.serialize(),cache:!1,dataType:"jsonp",jsonp:"c",contentType:"application/json; charset=utf-8",error:function(e){},success:function(e){if("success"!=e.result){var r=e.msg||"Sorry. Unable to subscribe. Please try again later.";s.css("color","red"),e.msg&&e.msg.indexOf("already subscribed")>=0&&(r="You're already subscribed. Thank you.",s.css("color","black")),s.html(r)}else s.html("Thank you!")}})}(e,s)):(s.html("A valid email address must be provided."),s.css("color","red"))})});
+  </script>
+  </section><!--=====================================================================CONTACT (SIXTH Section)======================================================================-->
+  <section class="contactSection">
+     <div class="contactText" id="contactSectionHeading">
+        <h1>Hire me or tell me your secrets.</h1>
+        <a href="https://www.linkedin.com/in/felixjanemalm/">LinkedIn <img id="liIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABFCAMAAAArU9sbAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAARVBMVEUAAABSUlJTU1NSUlJUVFRaWlpdXV1SUlJSUlJSUlJSUlJbW1thYWFVVVVZWVlcXFxSUlJSUlJSUlJSUlJSUlJSUlJSUlJyfzIuAAAAFnRSTlMA50EyAgUC+fj+RQEBHAkDup3I4fPtcP1gpwAAALhJREFUWMPt2GEPgiAQBuCjIDOttIz//1MbcxJBOry7TRv3fmNzz9i8OxQArpyeSr2GCpsRsdQ4xJAVt5tKlL9SNKqAImUq5pqifHqixitha4myT8UikbmqI3YAcHSAzJesNx2tb355RCvXr+NU45T4VL5glPRwRyi/wqLcefYC2ykLMyhfSZ9p1yt2aZTlKgcWJSgxw6KAKKKIIkoBSuP/wuW7rkilZ1HgQUS6sQqzb33OafxdEEPe/NsPaMUYdsUAAAAASUVORK5CYII=" alt="LinkedIn Logo"></a> <a href="mailto:hello@felixjanemalm.com?subject=Hello">hello@felixjanemalm.com<img id="mailIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABMCAMAAACsw+I9AAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAACjlBMVEUAAABSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlLovuDjAAAA2XRSTlMABJ8xVaA0M6FAaqhNKy4vGgHunkVHur/UY0sj4BY/ImbDH6I7BocT79fraxy7/Sh/8G28g4V08xkw2Jo3Nq7+nNz1j4Hi8QPKCBjebwsXAtmQ2uRI8rOG4VdhyAdwinzGhMLN0LLn0x4y+GcUJFmXW9VP9o4QVHP5izybbo3WWA4PkgzEOVxl9A1TPUQbqmlSYnI+Oqsp28mvBUnpuOYqCpl1SpFxlLSmy3fqEcdop0zdQzjFIcDsz6lgRntfFcEJJ73MpHa2WrE1o336/CxWErmTebD7lVH3bzTuyQAABDBJREFUWMO1mOVbVFEQxg+LyJKLSAmIhSIgoCiNpJSglGB3d3dgYLdgd3d3d3c7/417n92F9969G3f3nvcbc+bMb5/LnJk5hzGjyvuH+ep0aWmurpPdBbWUl7vd8tlaxETqW1Zb+pvUVviv9f2aGT83ECdV7zQx9hNHrTYwWhNX9REYDcRZOj1kFG9IMGM+xF0+bDh/yFsWyB8ynbETvBkzhPTK7MATMaa38TQm9uCF8I9trit+V/kwtP1FJfJarvqIFQ+ZROVJKiOyRzIZpQWryTj7nMmrvWoJcGSWKPCAnfBH207qMM6swp/eyLbTNj+wBEY7jyiOhIDtaukv20FU4wlGl15OIhYtxA+16x9RA2shLNRPBrtvkDOM3e0g1NpiweRhgBANFCWAv6OIQXUQpvM8g7EJQhXemAAOtuT8YxCkRSlJIfoa0Bc8QmcrR1zGf/gkryY7Qsh/Kji1UpoAeaJ/+LIUkocQxfmCn2tPJYys27C15VNckkCMA4xJV7raiygYjKegi3jRDEITB+D4amcFOPUMNnmnky0IUUYU7qiyjXi5BDakas3W5SAUMwQToIsNxJRk/MJTC8k+CNGbBNjnXm+NUYsn3Fc2VyxAiEQdJzbFEmLCDHArspD1FiF0LwK2d9sm7zRzJTgFhJBSiD7CfIiwI9zcYZwHOERZrkTWIDQB21tJpXT5I37RB3fJMQjRuzCIc7MYl4L2wFLCYWtRbEAofkQ3iJUcb7J3bYO1cJ71JLcFETxAYeMNRjfR0BZAzkFynkgGmnX6IXCst8SY2skJyOwA87Gp6KCMkYVWOAjJ7s7sV6uBDkHifGxGTuiM7WeMYogofdim8ftau0oRJ0OoAIcp5pmiDKKdhvOZoV0fT8WI8zMMV1tk+3kpgKRj42KvFxnNNWUwNR0yOScdAN85pfZCklxgW8RYWLmjM/bwF2CMDgT3YcvtggTjMBGVIVl9JNPDSdsWh4hbNiE12/FLDYkx+1nnYxPTza+GojQpm2Id8gEn/C8KZqK4o7Cx430rkL1z8HiNVjbciY7ugnBLkBHDsFBUkUKF3IDt/SplIR16Y8afc2TezrkEISKHmkHmDhedXQcvjxcfY5TkT2KIV0dYfO/EO0gQVrzpWQAJ/4pXl8VO3eY+ixJgXbUJUlmCeXHd2XvpRKwAG/8QRTDPis2Y4V5q3LCXYnndUrWJbcVCdXquOvf4mPV4k8Ciw9aq+OYZpJNtc2vy1X3AGe1izhg8SO2XqGjpUBOWxeNN7RVOhuxCPJ+Xu7zE5uY3jt8759BMw7i+lO+L7Q8949sK3u/C312YJ/8X7i2sjj8klK3M483YsIqx5bwh+UI5KeTLKNwo5PASrozsRsNh3FzNj5Gb2TS/9CnggwjZVY6NxWPZao2bRqNxE6SVkZuMLPlphEA5i9uYhqz/tE0kxqNANi0AAAAASUVORK5CYII=" alt="email icon"></a>
+     </div>
+  </section>
+  </body></html>
