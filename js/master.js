@@ -87,7 +87,7 @@ function topFunction() {
 //            SCROLL TO START
 // =====================================================================
 function scrollStart() {
-  isMobile.any ? jq(this).stop().animate({
+  isMobile.any ? body.stop().animate({
       scrollTop: 0
   }, 1e3, "easeOutExpo") : body.stop().animate({
       scrollTop: 0,
@@ -99,7 +99,7 @@ function scrollStart() {
 //            SCROLL TO SECTION 1
 // =====================================================================
 function scrollAbout() {
-  isMobile.any ? jq(this).stop().animate({
+  isMobile.any ? body.stop().animate({
       scrollTop: jq("#felix1").offset().top - 100
   }, 1e3, "easeOutExpo") : body.stop().animate({
       scrollTop: 0,
@@ -111,7 +111,7 @@ function scrollAbout() {
 //            SCROLL TO SECTION 2
 // =====================================================================
 function scrollWork() {
-  isMobile.any ? jq(this).stop().animate({
+  isMobile.any ? body.stop().animate({
       scrollTop: jq("#worktitle").offset().top - 100
   }, 1e3, "easeOutExpo") : body.stop().animate({
       scrollTop: 0,
@@ -123,7 +123,7 @@ function scrollWork() {
 //            SCROLL TO SECTION 3
 // =====================================================================
 function scrollPortfolio() {
-  isMobile.any ? jq(this).stop().animate({
+  isMobile.any ? body.stop().animate({
       scrollTop: jq("#eboardTitle").offset().top - 100
   }, 1e3, "easeOutExpo") : body.stop().animate({
       scrollTop: 0,
@@ -135,7 +135,7 @@ function scrollPortfolio() {
 //            SCROLL TO SECTION 4
 // =====================================================================
 function scrollDoodles() {
-  isMobile.any ? jq("body").stop().animate({
+  isMobile.any ? body.stop().animate({
       scrollTop: jq("#doodleSectionTitle").offset().top - 100
   }, 1e3, "easeOutExpo") : body.stop().animate({
       scrollTop: 0,
