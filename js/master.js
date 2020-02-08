@@ -135,7 +135,7 @@ function scrollPortfolio() {
 //            SCROLL TO SECTION 4
 // =====================================================================
 function scrollDoodles() {
-  isMobile.any ? jq(this).stop().animate({
+  isMobile.any ? jq("body").stop().animate({
       scrollTop: jq("#doodleSectionTitle").offset().top - 100
   }, 1e3, "easeOutExpo") : body.stop().animate({
       scrollTop: 0,
@@ -147,7 +147,7 @@ function scrollDoodles() {
 //            SCROLL TO SECTION 6
 // =====================================================================
 function scrollContact() {
-  isMobile.any ? jq(this).stop().animate({
+  isMobile.any ? jq("body").stop().animate({
       scrollTop: jq("#contactSectionHeading").offset().top - 100
   }, 1e3, "easeOutExpo") : body.stop().animate({
       scrollTop: 0,

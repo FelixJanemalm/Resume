@@ -433,4 +433,54 @@
      </div>
 
   </section>
+
+  <script type='text/javascript'> /* Must be positioned BELOW all involved divs */
+
+   function noBarsOnTouchScreen()
+   {
+     var elem, tx, ty;
+
+     if( 'ontouchstart' in document.documentElement )
+       for( var i = 0, arg; ( arg = arguments[ i ] ); i++ )
+         if( ( elem = document.getElementById( arg ) ) )
+         {
+           elem.style.overflow = 'hidden';
+           elem.ontouchstart = ts;
+           elem.ontouchmove = tm;
+         }
+
+     function ts( e )
+     {
+       var tch;
+
+       if(  e.touches.length == 1 )
+       {
+         e.stopPropagation();
+         tch = e.touches[ 0 ];
+         tx = tch.pageX;
+         ty = tch.pageY;
+       }
+     }
+
+     function tm( e )
+     {
+       var tch;
+
+       if(  e.touches.length == 1 )
+       {
+         e.preventDefault(); e.stopPropagation();
+         tch = e.touches[ 0 ];
+         this.scrollTop +=  ty - tch.pageY;
+         this.scrollLeft += tx - tch.pageX ;
+         ty = tch.pageY;
+         tx = tch.pageX;
+       }
+     }
+   }
+
+   noBarsOnTouchScreen( 'body' ); // <- Specify IDs of all required divs here.
+
+  </script>
+
+
   </body></html>
