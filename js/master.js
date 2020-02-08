@@ -147,7 +147,7 @@ function scrollDoodles() {
 //            SCROLL TO SECTION 6
 // =====================================================================
 function scrollContact() {
-  if(isMobile.any){ jq(this).stop().animate({
+  if(isMobile.any){ body.stop().animate({
       scrollTop: jq("#contactSectionHeading").offset().top - 100
     }, 1e3, "easeOutExpo")
   }
