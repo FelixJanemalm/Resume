@@ -210,19 +210,19 @@ jQuery.extend(jQuery.easing, {
   }, !1),
 
 
-    jq("body").scrollTop() <= jq("#felix1").offset().top - 250 ?
+    jq(this).scrollTop() <= jq("#felix1").offset().top - 250 ?
     (document.getElementById("homeNav").classList.add("activeSection"),
     jq("#dynamicSectionHeading").text("Home"))
     :
     document.getElementById("homeNav").classList.remove("activeSection"),
 
-    jq("body").scrollTop() <= jq("#worktitle").offset().top - 250 && jq("body").scrollTop() > jq("#felix1").offset().top - 250 ?
+    jq(this).scrollTop() <= jq("#worktitle").offset().top - 250 && jq("body").scrollTop() > jq("#felix1").offset().top - 250 ?
     (document.getElementById("aboutNav").classList.add("activeSection"),
     jq("#dynamicSectionHeading").text("About"))
     :
     document.getElementById("aboutNav").classList.remove("activeSection"),
 
-    jq("body").scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq("body").scrollTop() > jq("#worktitle").offset().top - 250 ?
+    jq(this).scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq("body").scrollTop() > jq("#worktitle").offset().top - 250 ?
     (document.getElementById("resumeNav").classList.add("activeSection"),
     jq("#dynamicSectionHeading").text("Resume"))
     :
@@ -252,19 +252,19 @@ jQuery.extend(jQuery.easing, {
         opacity: jq(this).scrollTop() / (windowHeight / 2) - 1
       }),
 
-      jq("body").scrollTop() <= jq("#felix1").offset().top - 250 ? (
+      jq(this).scrollTop() <= jq("#felix1").offset().top - 250 ? (
       document.getElementById("homeNav").classList.add("activeSection"),
       jq("#dynamicSectionHeading").text("Home"))
       :
       document.getElementById("homeNav").classList.remove("activeSection"),
 
-      jq("body").scrollTop() <= jq("#worktitle").offset().top - 250 && jq("body").scrollTop() > jq("#felix1").offset().top - 250 ? (
+      jq(this).scrollTop() <= jq("#worktitle").offset().top - 250 && jq("body").scrollTop() > jq("#felix1").offset().top - 250 ? (
       document.getElementById("aboutNav").classList.add("activeSection"),
       jq("#dynamicSectionHeading").text("About"))
       :
       document.getElementById("aboutNav").classList.remove("activeSection"),
 
-      jq("body").scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq("body").scrollTop() > jq("#worktitle").offset().top - 250 ? (
+      jq(this).scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq("body").scrollTop() > jq("#worktitle").offset().top - 250 ? (
       document.getElementById("resumeNav").classList.add("activeSection"),
       jq("#dynamicSectionHeading").text("Resume"))
       :
