@@ -199,6 +199,7 @@ jQuery.extend(jQuery.easing, {
   isMobile.any ? (
     jq("body").css({ width: "100vw"  }),
     jq(".home").css({ height: "50em"  }),
+    jq(".welcomemedia1").css({ display: "none" }),
     jq(".keyboard").css({ display: "none" }),
     jq(".doodleTitle").css({ "padding-top": "30px" }),
     jq(".contactText").css({ "margin-top": "0"  }),
