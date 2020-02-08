@@ -216,13 +216,13 @@ jQuery.extend(jQuery.easing, {
     :
     document.getElementById("homeNav").classList.remove("activeSection"),
 
-    jq(this).scrollTop() <= jq("#worktitle").offset().top - 250 && jq("body").scrollTop() > jq("#felix1").offset().top - 250 ?
+    jq(this).scrollTop() <= jq("#worktitle").offset().top - 250 && jq(this).scrollTop() > jq("#felix1").offset().top - 250 ?
     (document.getElementById("aboutNav").classList.add("activeSection"),
     jq("#dynamicSectionHeading").text("About"))
     :
     document.getElementById("aboutNav").classList.remove("activeSection"),
 
-    jq(this).scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq("body").scrollTop() > jq("#worktitle").offset().top - 250 ?
+    jq(this).scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq(this).scrollTop() > jq("#worktitle").offset().top - 250 ?
     (document.getElementById("resumeNav").classList.add("activeSection"),
     jq("#dynamicSectionHeading").text("Resume"))
     :
@@ -258,13 +258,13 @@ jQuery.extend(jQuery.easing, {
       :
       document.getElementById("homeNav").classList.remove("activeSection"),
 
-      jq(this).scrollTop() <= jq("#worktitle").offset().top - 250 && jq("body").scrollTop() > jq("#felix1").offset().top - 250 ? (
+      jq(this).scrollTop() <= jq("#worktitle").offset().top - 250 && jq(this).scrollTop() > jq("#felix1").offset().top - 250 ? (
       document.getElementById("aboutNav").classList.add("activeSection"),
       jq("#dynamicSectionHeading").text("About"))
       :
       document.getElementById("aboutNav").classList.remove("activeSection"),
 
-      jq(this).scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq("body").scrollTop() > jq("#worktitle").offset().top - 250 ? (
+      jq(this).scrollTop() <= jq("#eboardTitle").offset().top - 250 && jq(this).scrollTop() > jq("#worktitle").offset().top - 250 ? (
       document.getElementById("resumeNav").classList.add("activeSection"),
       jq("#dynamicSectionHeading").text("Resume"))
       :
