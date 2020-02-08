@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Felix Janemalm | Personal website</title>
+      <meta charset="utf-8">
+      <meta name="description" content="I bet on the apetite for socially conscious companies. Let's save the world one good idea at a time.">
+      <meta name="keywords" content="CV, Resume, Felix, Janemalm">
+      <meta name="author" content="Felix Janemalm">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- adding favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/master.css">
+
+      <!-- fonts -->
+      <style media="screen">
+      @font-face{
+         font-family:proxima_novabold;
+         src:url(fonts/proxima_nova_bold-webfont.woff2) format('woff2'),url(fonts/proxima_nova_bold-webfont.woff) format('woff');
+         font-weight:400;
+         font-style:normal
+      }
+      @font-face{
+         font-family:proxima_novaregular;
+         src:url(fonts/felix_regular-webfont.woff2) format('woff2'),url(fonts/felix_regular-webfont.woff) format('woff');
+         font-weight:400;
+         font-style:normal
+      }
+      </style>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/master.js"></script>
+
+</head>
+
+
+
+<!-- Body of Page -->
+<body onmouseenter="mouseEnterPage()">
+   <!--===============================================================================
+                                SITE NAVIGATION
+   ===============================================================================-->
+   <header id="topnav">
+      <nav class="sitenavigation">
+         <div id="menuToggle">
+            <input type="checkbox"/> <span></span> <span></span> <span></span> <a href="#start" onclick="scrollStart()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABSCAMAAADw8nOpAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAAYFBMVEUAAAAvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy9VXnegAAAAH3RSTlMAbh38Ou4k7e8R8BLdED439RPy4AIf8RwiKmdvcSdwCQvECQAAAJxJREFUWMPt2EkOwjAQBdEEMDjOyBDCzP1vyRIlUozc6o5YVB3g7fxbcpaRUVXYpReqGPmWFSOdSHSQkJAWZCciu4Vno2026TUtV4GIFKv3xXxleRKQx4Of7+wGAfljansBGb896xUkJOSCpMEbN1gig70kIkrs9si/ve61AjmZ3KsCGcbkVoF0kJCQ/0NOZuOpQI5+/72/MPcJfQB8RKrWLRhDGAAAAABJRU5ErkJggg==" alt="Logo" id="logo"></a>
+            <ul id="menu">
+               <li><a class="links" id="homeNav" onclick="scrollStart()">Home</a></li>
+               <li><a class="links" id="aboutNav" onclick="scrollAbout()">About</a></li>
+               <li><a class="links" id="resumeNav" onclick="scrollWork()">Resume</a></li>
+               <li><a class="links" id="portfolioNav" onclick="scrollPortfolio()">Portfolio</a></li>
+               <li><a class="links" id="doodleNav" onclick="scrollDoodles()">Doodles</a></li>
+               <li><a class="links" id="contactNav" onclick="scrollContact()">Contact</a></li>
+            </ul>
+         </div>
+         <p id="dynamicSectionHeading"></p>
+      </nav>
+   </header>
+
+   <div id="start"><!-- for top scroll only -->
+   </div>
+
+   <section class="home">
+      <div class="homeHeading">
+         <h1>I want to create the future where advertising has a good reputation.</h1>
+         <div class="rotate"> <a onclick="scrollAbout()" id="arrowLink">→</a> </div>
+      </div>
+   </section>
+
+   <!--=====================================================================
+                          WELCOME (First Section)
+   ======================================================================-->
+   <section class="welcome">
+      <div class="welcomecontent" id="WelcomeContent">
+
+         <div class="about">
+            <h1>👋I'm Felix</h1>
+            <p>I bet on apetite for socially conscious companies.</p>
+            <p>Let's save the world one good idea at a time. <a href="mailto:mail@felix.website?Subject=Hello" title="email" target="_top">Reach out.</a></p>
+         </div>
+
+         <div class="welcomemedia1">
+            <p>*You can use your keyboard arrows to move around.</p>
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/arrow-keys2.jpg" alt="Indicates navigation by keyboard arrows.">
+         </div>
+         <img id="felix1" src="images/venndiagram.jpg" alt="Venndiagram: Marketer, Developer, Data analyst; where I want to be.">
+         <!-- <div class="bottomBanner">
+          <img src="images/downarrow.png" alt="scroll down">
+        </div>-->
+      </div>
+   </section>
+
+
+   <!--=====================================================================
+                            RESUME (SECOND Section)
+   ======================================================================-->
+   <section class="resume" id="resumeSection">
+
+      <div class="resumetitle" id="worktitle">
+         <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABFAgMAAACpjylsAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAADFBMVEUAAAA0LTM0LTM0LTNFcOH0AAAAA3RSTlMAFwjxLsh6AAAAZUlEQVQ4y2NggAL+/////21gQAP/QeAAmiAzVlF+sOgHdNEPMAIZ2IM0M/+hkyhxAOij/8gA6EuwVzFED4C8iiH6gcEei+gfUAhiiP4fFR0VHRUdFcUpir0swV7uYC+jgEZglmcAtY55pz+LSOoAAAAASUVORK5CYII=" alt="Work Symbol">WORK</h1>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Product designer | Yubico</h3>
+         <p>Part of a new UX team looking at the full value chain of the company.</p>
+         <a href="https://yubico.com/" title="Yubico's Website" rel="external" target="_blank">yubico.com</a>
+         <p>Dec 2019 - Current</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Growth specialist | Yubico</h3>
+         <p>Responsible for creating Yubico's SEO processes and strategy, running A/B tests on the website and supporting advertising functions.</p>
+         <a href="https://yubico.com/" title="Yubico's Website" rel="external" target="_blank">yubico.com</a>
+         <p>Aug 2019 - November</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Founder | By Creators</h3>
+         <p>Started an creative agency togheter with <a href="https://elinpettersson.com/" title="Elin's personal website" rel="external" target="_blank">Elin</a> for freelance work during my studies abroad. Specializing in Instagram.</p>
+         <a href="https://bycreators.com/" title="By Creators Website" rel="external" target="_blank">bycreators.com</a>
+         <p>Jan 2019 - Jul 2019</p>
+      </div>
+
+      <div class="resumecontent" id="prassText">
+         <h3>PR Associate | Squid App Australia</h3>
+         <p>Generating press for the launch and curating the apps news feed.</p>
+         <a href="https://squidapp.co/" title="Squid App Website" rel="external" target="_blank">squidapp.co</a>
+         <p>Sep 2017 - Dec 2018</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Sales Representative | Sheridan</h3>
+         <p>Selling Luxury Bed Linen, Towels and Homewares; I can tell you the threadcount of sheets just by touching it.</p>
+         <a href="https://www.sheridan.com.au/" title="Sheridan Website" rel="external" target="_blank">sheridan.com.au</a>
+         <p>Dec 2017 - Nov 2018</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Creative Intern | A major agency in Perth</h3>
+         <p>Responsible for creating and running campaigns, with everything from strategy and copywriting to graphic design.</p>
+         <p>Aug 2018 - Nov 2018</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Creative Intern | OTOTGo</h3>
+         <p>Setting up websites, creating and scheduling content for social media.</p>
+         <a href="https://www.linkedin.com/company/ototgo/" title="OTOTgo LinkedIn Company page" rel="external" target="_blank">linkedin.com/ototgo</a>
+         <p>Mar 2017 - May 2017</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Summer Job | Volvo IT</h3>
+         <p>User Acess and System Administration.</p>
+         <a href="https://www.volvogroup.com/" title="Volvo Website" rel="external" target="_blank">volvogroup.com</a>
+         <p>Jun 2015 - Aug 2015</p>
+      </div>
+
+            <div style="clear: both;"></div>
+
+      <div class="resumetitle" id="Degreetitle">
+         <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAAAzAgMAAACWKNzJAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAACVBMVEUAAAA0LTM0LTN732Y0AAAAAnRSTlMA/iyWEiMAAADeSURBVDjLbZTJEQQhCEUpjoQwIRiloXC0iHJUGpXlH980H2QZABMyFBIpYBMZCZJMcY5f6il+aeT4iFGOOJqqoqn/GMWp5/jj0SIdb1HOQwoVBptihlRlYyorI8hVdKXeY1ZLZXcotFe7sCn267G7rnTcomcSo7OndPLLofbwobti9PPYCS7dod9vDxWNlUAZ2lfgS1f5KImKPdxTpore51GxELDyZoq6VaHrFZ2kcRpct2xYTyiuXlrrZamVxWm2uNh7mkbJrb9RcKdyKD4Qn1v8nevB4viXXfn/0fof++l9ykDGfKcAAAAASUVORK5CYII=" alt="Education Symbol">DEGREE</h1>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Edith Cowan University</h3>
+         <p>Partner school to Berghs, completing my Bachelor of Media and Communication. </p>
+         <a href="https://www.ecu.edu.au/degrees/courses/bachelor-of-media-and-communication" title="Edit Cowan University Course Page" rel="external" target="_blank">ecu.edu.au/bachelor</a>
+         <p>2017 - 2019</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Berghs School of Communication</h3>
+         <p>Bachelor of Media and Communication</p>
+         <a href="https://www.berghs.se/program/berghs-bachelor/" title="Berghs Course Page" rel="external" target="_blank">berghs.se/bachelor</a>
+         <p>2016 - 2016</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>Berghs School of Communication</h3>
+         <p>Modern Marketing Diploma</p>
+         <a href="https://www.berghs.se/kurs/marknadskommunikation-professional-kvallstid/" title="Berghs Course Page" rel="external" target="_blank">Current version of course</a>
+         <p>2015 - 2015</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>IHM Business School</h3>
+         <p>Digital Marketing Diploma</p>
+         <a href="https://www.ihm.se/utbildningar/marknadsforing/digital-marketing/" title="IHM Course Page" rel="external" target="_blank">ihm.se/digital-marketing</a>
+         <p>2015 - 2015</p>
+      </div>
+
+      <div class="resumecontent">
+         <h3>GTG Technical High School</h3>
+         <p>Industrial Engineering</p>
+         <a href="https://www.gtg.se/teknikprogrammet/" title="GTG Course Page" rel="external" target="_blank">gtg.se/teknik</a>
+         <p>2012 - 2015</p>
+      </div>
+
+      <div style="clear: both;"></div>
+   </section>
+
+
+   <!--=====================================================================
+                          PORTFOLIO (THIRD Section)
+   ======================================================================-->
+   <section class="portfolio">
+
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle">
+            <p>E-commerce platform</p>
+         </div>
+
+         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Website design" data-src="images/aomwPortfolio.jpg" alt="UX Design for e-commerce platform." class="portfolioItem"> <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="itemToggle" onclick="clickPortfolioItem()" tabindex="0"></label>
+
+         <div class="collapsible-content">
+            <div class="content-inner" id="cont4">
+               <h3>Passion Project - Art on My Wall</h3>
+               <p>E-commerce solution for visual artists.</p>
+               <a title="Art on My Wall Website" rel="external">Website coming soon</a>
+               <p> With Art On My wall you upload your images and a beautiful portfolio is generated with payment system, production and shipping all taken care of. Me and my friend think drag and drop website builders are too complicated. With or without a custom domain this is the new and better alternative to using Instagram as a portfolio. </p>
+            </div>
+         </div>
+
+      </div>
+
+
+      <!--=====================================================================
+                                      ITEM 2
+      ======================================================================-->
+
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle2">
+            <p>Bike Event for Women's Rights</p>
+         </div>
+
+         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/badges.png" alt="Pin design" id="amnesty" class="portfolioItem"> <input id="collapsible2" class="toggle2" type="checkbox"> <label for="collapsible2" class="itemToggle" onclick="clickPortfolioItem2()" tabindex="0"></label>
+
+         <div class="collapsible-content2">
+            <div class="content-inner" id="cont2">
+
+               <div class="rowP rowP1">
+                  <div class="columnP column1Visibility"> <img src="images/badges.png"  style="width:100%" onclick="imgGallery1(this);"> </div>
+                  <div class="columnP column1Visibility"> <img src="images/badges2.jpg"  style="width:100%" onclick="imgGallery1(this);"> </div>
+                  <div class="columnP column1Visibility"> <img src="images/badges3.png"  style="width:100%" onclick="imgGallery1(this);"> </div>
+                  <div class="columnP column1Visibility"> <img src="images/badges4.jpg"  style="width:100%" onclick="imgGallery1(this);"> </div>
+               </div>
+
+               <h3>Volunteer - Amnesty</h3>
+               <p>Pin design</p>
+               <a href="https://peoplechangetheworld.org/cykelansiktet" title="More about the movement (in Swedish)" rel="external" target="_blank">#cykelansiktet</a>
+               <p> This year(2019) it is one hundred years since women got the right to vote in Sweden. Back then it was also deemed inappropriate for women to ride a bike.<br><br>This event was part of a larger campaign in Sweden which uses the bike as a symbol to talk about women's rights. I designed a pin for Amnesty's booth which features the traditional penny-farthing but with a girl on top as opposed to the stereotypical man in a suit and top hat. At the booth, people could colourise the design and press their own pins. </p>
+            </div>
+         </div>
+
+      </div>
+
+
+      <!--=====================================================================
+                                      ITEM 3
+      ======================================================================-->
+
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle3">
+            <p>Pitching to RedBullTV</p>
+         </div>
+
+         <video loop playsinline poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/redbullPosterImg.jpg" alt="Out of home advertising: RedbullTV and chill, with strikethrough on chill and thrill written in a handwriting font underneath." muted id="eboardVideo3" class="portfolioItem" >
+            <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,dpr_auto,f_auto,q_auto,vc_h264,w_auto/v1560007220/redbullTVa_b8ixjc.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,dpr_auto,f_auto,q_auto,vc_theora,w_auto/v1560007220/redbullTVa_b8ixjc.ogv" type="video/ogg">
+            You need an HTML 5-capable browser.
+         </video>
+
+         <input id="collapsible3" class="toggle3" type="checkbox"> <label for="collapsible3" class="itemToggle" onclick="clickPortfolioItem3()" tabindex="0"></label>
+         <div class="collapsible-content3">
+            <div class="content-inner" id="cont1">
+               <h3>Campaign Pitch - RedBullTV</h3>
+               <p>Berghs Bachelor</p>
+               <a href="https://www.redbull.com/int-en/tv/" title="RedBullTv's Website" rel="external" target="_blank">redbulltv.com</a>
+               <p> A great benefit with studying at Berghs School of Communication is that you work on real client cases. During the fall of 2016, my group pitched our "Free Thrills" Campaign to RedBullTv.<br><br>RedBullTV is a streaming platform that offers a range of genres in video content. The challenges we faced were that the platform had close to zero recognition and we proved through interviews that people were very fast to assume we were advertising the RedBull drink, so our message was easily lost. We understood that people who did not like the RedBull drink would not listen to the message and less tech-savvy audiences would not yield a high conversion ratio. <br><br>Our strategy was to hone in on the younger part of our demographic who were already brand fans and get them to evangelize for us. To them, the recognition would be a strength. So throughout our campaign, we focused on the content on the platform which was closest to the RedBull brand. Our messaging was aimed at driving signups from the younger audience and used references to other streaming platforms to put our message in the right context. We made sure to mention that the platform was free, which was especially relevant to the lower income segment we directed our campaign towards. </p>
+            </div>
+         </div>
+
+      </div>
+
+
+      <!--=====================================================================
+                                          ITEM 4
+      ======================================================================-->
+
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle4">
+            <p>UX for Dress Rental Service</p>
+         </div>
+
+         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/frontpage1.png" alt="UX Mockup for Dress Rental Website" id="myCloset" class="portfolioItem"> <input id="collapsible4" class="toggle4" type="checkbox"> <label for="collapsible4" class="itemToggle" onclick="clickPortfolioItem4()" tabindex="0"></label>
+
+         <div class="collapsible-content4">
+            <div class="content-inner" id="cont3">
+               <div class="rowP">
+                  <div class="columnP column2Visibility"> <img src="images/frontpage1.png" style="width:100%" onclick="imgGallery2(this);"> </div>
+                  <div class="columnP column2Visibility"> <img src="images/productpage1.png"  style="width:100%" onclick="imgGallery2(this);"> </div>
+                  <div class="columnP column2Visibility"> <img src="images/productpage2.png" style="width:100%" onclick="imgGallery2(this);"> </div>
+                  <div class="columnP column2Visibility"> <img src="images/HowitWorks1.png" style="width:100%" onclick="imgGallery2(this);"> </div>
+                  <div class="columnP column2Visibility"> <img src="images/Contact.png" style="width:100%" onclick="imgGallery2(this);"> </div>
+               </div>
+               <h3>Business Consultant - My Closet</h3>
+               <p>Dress rental in Perth.</p>
+               <a href="https://www.amourdresshire.com.au/" title="Dress Rental Website" rel="external" target="_blank">Current Website</a>
+               <p> I have been lucky enough to work as a consultant for some smaller businesses during my studies. This design is the result of a short stint as a consultant to My Closet(Now Amour Dress Hire) in 2017. </p>
+            </div>
+         </div>
+
+      </div>
+
+
+      <!--=====================================================================
+                                          ITEM 5
+      ======================================================================-->
+
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle5">
+            <p>Electric Skateboard Build</p>
+         </div>
+
+         <video loop playsinline poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Picture of home-built electric skateboard." data-src="images/eboardPosterImg36.jpg" muted id="eboardVideo5" class="portfolioItem" >
+            <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,dpr_auto,f_auto,q_auto,vc_h264,w_auto/v1559584788/eboard_w8r1pj.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,dpr_auto,f_auto,q_auto,vc_theora,w_auto/v1559584788/eboard_w8r1pj.ogv" type="video/ogg">
+            You need an HTML 5-capable browser.
+         </video>
+
+         <input id="collapsible5" class="toggle5" type="checkbox"> <label for="collapsible5" class="itemToggle" onclick="clickPortfolioItem5()" tabindex="0"></label>
+         <div class="collapsible-content5">
+            <div class="content-inner" id="cont5">
+               <h3>Building the Best Electric Skateboard</h3>
+               <a href="https://www.ted.com/talks/sanjay_dastoor_a_skateboard_with_a_boost#t-238346" title="Sanjay Dastoor's Ted Talk" rel="external" target="_blank">Sanjay Dastoor's Ted Talk</a>
+               <p> For me, this was one of those moments where you realize you can do anything you set your mind to, with some help from the internet.<br><br>I had no prior experience from working with electronics when I saw Boosted Boards Ted talk, pitching their early concept electric powered skateboard. As soon as I saw the electric skateboard, I knew it was exactly what I always wanted. But, if they could fit so much power in their small form factor, how much power could I not pack into my tiny, tiny cruise board? They also mentioned that the parts they used were actually from the toy store... I entered the rabbit hole and have since built two, too powerful, electric skateboards for less than the price of a Boosted board. </p>
+            </div>
+         </div>
+
+      </div>
+
+
+      <!--=====================================================================
+                                            ITEM 6
+      ======================================================================-->
+
+      <div class="portfoliocontent">
+         <div class="portfolioText" id="eboardTitle6">
+            <p>More Coming Soon</p>
+         </div>
+      </div>
+
+   </section>
+
+
+   <!--=====================================================================
+                                  VISUAL DOODLES (FOURTH Section)
+   ======================================================================-->
+   <Section class="doodleSection">
+      <div class="doodleTitle" id="doodleSectionTitle">
+         <h1 data-heading="D">D</h1>
+         <h1 data-heading="O">O</h1>
+         <h1 data-heading="O">O</h1>
+         <h1 data-heading="D">D</h1>
+         <h1 data-heading="L">L</h1>
+         <h1 data-heading="E">E</h1>
+         <h1 data-heading="S">S</h1>
+      </div>
+
+      <div class="doodlesWrapper">
+
+         <div class="doodle">
+            <button type="button" class="button play" id="fairytalePlayButton" name="button"></button>
+            <video muted loop playsinline onclick="clickDoodleFairytale()" id="fairytale" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Animated dragon flying in front of thunderstorm." data-src="https://res.cloudinary.com/felix-website/image/upload/c_fit,dpr_auto,f_auto,q_auto,w_840/v1559703568/fairytaleposter_njd9tl.jpg">
+               <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,f_auto,q_auto,w_840/v1559584805/Fairytale_h11diq.mp4" type="video/mp4"/>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,vc_theora,w_840/v1559584805/Fairytale_h11diq.ogv" type="video/ogg"/>
+               You need an HTML 5-capable browser.
+            </video>
+         </div>
+
+         <div class="doodle"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/rainbowroad.jpg" alt="PhotoDancing on water with perfect reflection of sky."> </div>
+
+         <div class="doodle">
+            <button type="button" class="button play" id="SilhuettedrivePlayButton" name="button"></button>
+            <video muted id="Silhuettedrive" onclick="clickDoodleSilhuettedrive()" playsinline loop poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/silhuettedriveposter.jpg">
+               <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,f_auto,q_auto,w_auto/v1559584815/Silhuette_drive_n1pf1p.mp4" type="video/mp4"/>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,q_75,vc_theora,w_auto/v1559584815/Silhuette_drive_n1pf1p.ogv" type="video/ogg"/>
+               You need an HTML 5-capable browser.
+            </video>
+         </div>
+
+         <div class="doodle">
+            <button type="button" class="button play" id="FlyHomePlayButton" name="button"></button>
+            <video id="FlyHome" onclick="clickDoodleFlyHome()" playsinline loop poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Seamless loop, zooming out from a fountain in a park until the landscape transforms into the fountain" data-src="images/flyhomeposter.jpg">
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,q_auto:eco,vc_h264,w_746/v1559584857/FlyHome_ajwnl5.mp4" type="video/mp4"/>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,q_auto:eco,vc_theora,w_746/v1559584857/FlyHome_ajwnl5.ogv" type="video/ogg"/>
+               You need an HTML 5-capable browser.
+            </video>
+         </div>
+<!--
+         <div class="doodle">
+            <button type="button" class="button playblack" id="SignaturePlayButton" name="button"></button>
+            <video poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Hand signtaure being written by invisible hand, with the camera following the brush strokes." data-src="images/Signatureposter.png" id="Signature" onclick="clickDoodleSignature()" playsinline loop>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/c_scale,q_auto,vc_auto,w_auto/v1559584862/signature_ccwnw9.mp4" type="video/mp4"/>
+               <source src="https://res.cloudinary.com/felix-website/video/upload/ac_none,c_scale,f_auto,q_58,vc_theora,w_auto/v1559584862/signature_ccwnw9.ogv" type="video/ogg"/>
+               You need an HTML 5-capable browser.
+            </video>
+         </div>
+-->
+         <div class="doodle"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/redrum.jpg" alt="White room with red writing all over the furniture and walls, featuring an invisible person in clothes."> </div>
+      </div>
+
+   </Section>
+
+  <!--=====================================================================
+                                        CONTACT (FIFTH Section)
+  ======================================================================-->
+  <section class="contactSection">
+
+     <div class="contactText" id="contactSectionHeading">
+        <h1>Hire me or tell me your secrets.</h1>
+          <a href="https://www.linkedin.com/in/felixjanemalm/">LinkedIn <img id="liIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABFCAMAAAArU9sbAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAARVBMVEUAAABSUlJTU1NSUlJUVFRaWlpdXV1SUlJSUlJSUlJSUlJbW1thYWFVVVVZWVlcXFxSUlJSUlJSUlJSUlJSUlJSUlJSUlJyfzIuAAAAFnRSTlMA50EyAgUC+fj+RQEBHAkDup3I4fPtcP1gpwAAALhJREFUWMPt2GEPgiAQBuCjIDOttIz//1MbcxJBOry7TRv3fmNzz9i8OxQArpyeSr2GCpsRsdQ4xJAVt5tKlL9SNKqAImUq5pqifHqixitha4myT8UikbmqI3YAcHSAzJesNx2tb355RCvXr+NU45T4VL5glPRwRyi/wqLcefYC2ykLMyhfSZ9p1yt2aZTlKgcWJSgxw6KAKKKIIkoBSuP/wuW7rkilZ1HgQUS6sQqzb33OafxdEEPe/NsPaMUYdsUAAAAASUVORK5CYII=" alt="LinkedIn Logo"></a>
+        <a href="mailto:hello@felixjanemalm.com?subject=Hello">hello@felixjanemalm.com<img id="mailIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABMCAMAAACsw+I9AAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAACjlBMVEUAAABSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlLovuDjAAAA2XRSTlMABJ8xVaA0M6FAaqhNKy4vGgHunkVHur/UY0sj4BY/ImbDH6I7BocT79fraxy7/Sh/8G28g4V08xkw2Jo3Nq7+nNz1j4Hi8QPKCBjebwsXAtmQ2uRI8rOG4VdhyAdwinzGhMLN0LLn0x4y+GcUJFmXW9VP9o4QVHP5izybbo3WWA4PkgzEOVxl9A1TPUQbqmlSYnI+Oqsp28mvBUnpuOYqCpl1SpFxlLSmy3fqEcdop0zdQzjFIcDsz6lgRntfFcEJJ73MpHa2WrE1o336/CxWErmTebD7lVH3bzTuyQAABDBJREFUWMO1mOVbVFEQxg+LyJKLSAmIhSIgoCiNpJSglGB3d3dgYLdgd3d3d3c7/417n92F9969G3f3nvcbc+bMb5/LnJk5hzGjyvuH+ep0aWmurpPdBbWUl7vd8tlaxETqW1Zb+pvUVviv9f2aGT83ECdV7zQx9hNHrTYwWhNX9REYDcRZOj1kFG9IMGM+xF0+bDh/yFsWyB8ynbETvBkzhPTK7MATMaa38TQm9uCF8I9trit+V/kwtP1FJfJarvqIFQ+ZROVJKiOyRzIZpQWryTj7nMmrvWoJcGSWKPCAnfBH207qMM6swp/eyLbTNj+wBEY7jyiOhIDtaukv20FU4wlGl15OIhYtxA+16x9RA2shLNRPBrtvkDOM3e0g1NpiweRhgBANFCWAv6OIQXUQpvM8g7EJQhXemAAOtuT8YxCkRSlJIfoa0Bc8QmcrR1zGf/gkryY7Qsh/Kji1UpoAeaJ/+LIUkocQxfmCn2tPJYys27C15VNckkCMA4xJV7raiygYjKegi3jRDEITB+D4amcFOPUMNnmnky0IUUYU7qiyjXi5BDakas3W5SAUMwQToIsNxJRk/MJTC8k+CNGbBNjnXm+NUYsn3Fc2VyxAiEQdJzbFEmLCDHArspD1FiF0LwK2d9sm7zRzJTgFhJBSiD7CfIiwI9zcYZwHOERZrkTWIDQB21tJpXT5I37RB3fJMQjRuzCIc7MYl4L2wFLCYWtRbEAofkQ3iJUcb7J3bYO1cJ71JLcFETxAYeMNRjfR0BZAzkFynkgGmnX6IXCst8SY2skJyOwA87Gp6KCMkYVWOAjJ7s7sV6uBDkHifGxGTuiM7WeMYogofdim8ftau0oRJ0OoAIcp5pmiDKKdhvOZoV0fT8WI8zMMV1tk+3kpgKRj42KvFxnNNWUwNR0yOScdAN85pfZCklxgW8RYWLmjM/bwF2CMDgT3YcvtggTjMBGVIVl9JNPDSdsWh4hbNiE12/FLDYkx+1nnYxPTza+GojQpm2Id8gEn/C8KZqK4o7Cx430rkL1z8HiNVjbciY7ugnBLkBHDsFBUkUKF3IDt/SplIR16Y8afc2TezrkEISKHmkHmDhedXQcvjxcfY5TkT2KIV0dYfO/EO0gQVrzpWQAJ/4pXl8VO3eY+ixJgXbUJUlmCeXHd2XvpRKwAG/8QRTDPis2Y4V5q3LCXYnndUrWJbcVCdXquOvf4mPV4k8Ciw9aq+OYZpJNtc2vy1X3AGe1izhg8SO2XqGjpUBOWxeNN7RVOhuxCPJ+Xu7zE5uY3jt8759BMw7i+lO+L7Q8949sK3u/C312YJ/8X7i2sjj8klK3M483YsIqx5bwh+UI5KeTLKNwo5PASrozsRsNh3FzNj5Gb2TS/9CnggwjZVY6NxWPZao2bRqNxE6SVkZuMLPlphEA5i9uYhqz/tE0kxqNANi0AAAAASUVORK5CYII=" alt="email icon"></a>
+     </div>
+
+  </section>
+  </body></html>
