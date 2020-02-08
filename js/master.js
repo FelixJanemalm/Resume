@@ -147,12 +147,16 @@ function scrollDoodles() {
 //            SCROLL TO SECTION 6
 // =====================================================================
 function scrollContact() {
-  isMobile.any ? jq("body").stop().animate({
+  if(isMobile.any){ jq("body").stop().animate({
       scrollTop: jq("#contactSectionHeading").offset().top - 100
-  }, 1e3, "easeOutExpo") : body.stop().animate({
+    }, 1e3, "easeOutExpo")
+  }
+  else {
+    body.stop().animate({
       scrollTop: 0,
       scrollLeft: 6 * windowWidth
-  }, 1e3, "easeOutExpo")
+    }, 1e3, "easeOutExpo")
+  }
 }
 
 function leftArrowPressed() {
